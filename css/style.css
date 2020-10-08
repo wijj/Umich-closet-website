@@ -212,19 +212,54 @@ nav{
   text-align: right;
   margin: auto 0;
 }
+img{
+  object-fit:cover;
+  align-self:center;
+}
+.above1{
+  grid-column: 2/ span 1;
+  justify-self: start;
+}
+
+img.logo{
+  width:40%;
+  height:40%;
+}
+header h2{
+  padding: 0 0 50px 0;
+}
 
 .container{
   display:grid;
-  grid-template-columns: 50px auto 500px auto 50px;
-  grid-template-rows: 400px 400px 400px 400px 400px;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 200px auto 400px 400px 400px 400px 400px 400px;
+}
 }
 
-.about, .clients, .method-image, .contact-image{
-  grid-column: 3/ span 2;
+.shirt1, .shirt2, .shirt3, .shirt4,.shirt5,.shirt6{
+  grid-column: 2/ span 1;
+}
+.shirt1-image,.shirt1{
+  grid-row: 3/ span 1;
+}
+.shirt2-image,.shirt2{
+  grid-row: 4/ span 1;
+}
+.shirt3-image,.shirt3{
+  grid-row: 5/ span 1;
+}
+.shirt4-image,.shirt4{
+  grid-row: 6/ span 1;
+}
+.shirt5-image,.shirt5{
+  grid-row: 7/ span 1;
+}
+.shirt6-image,.shirt6{
+  grid-row: 8/ span 1;
 }
 
-.about-image, .clients-image, .method, .contact{
-  grid-column: 2 /span 2;
+.shirt1-image, .shirt2-image, .shirt3-image,.shirt4-image,.shirt5-image,.shirt6-image{
+  grid-column: 1 /span 1;
 }
 }
 
