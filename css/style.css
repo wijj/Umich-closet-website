@@ -156,45 +156,45 @@ img{
 grid-column: 2 / span 1; 
 }
 .shirt1{
-  grid-row: 3/ span 1;
+  grid-row: 4/ span 1;
 } 
 .shirt1-image{
 grid-row: 3/ span 1;
 }
 
 .shirt2{
-  grid-row: 5/ span 1;
+  grid-row: 6/ span 1;
 } 
 .shirt2-image{
-grid-row: 4/ span 1;
+grid-row: 5/ span 1;
 }
 
 .shirt3{
-  grid-row: 7/ span 1;
+  grid-row: 8/ span 1;
 } 
 .shirt3-image{
-grid-row: 6/ span 1;
+grid-row: 7/ span 1;
 }
 
 .shirt4{
-grid-row: 9/ span 1;
+grid-row: 10/ span 1;
 }
  .shirt4-image{
-grid-row: 8/ span 1;
+grid-row: 9/ span 1;
 }
 
 .shirt5{
-  grid-row: 11/span 1;
+  grid-row: 12/span 1;
 }
  .shirt5-image{
-  grid-row: 10/ span 1;
+  grid-row: 11/ span 1;
  } 
 
 .shirt6{
-  grid-row: 13/ span 1;
+  grid-row: 14/ span 1;
 } 
 .shirt6-image{
-  grid-row: 12/ span 1;
+  grid-row: 13/ span 1;
 }
 
 .text-block{
