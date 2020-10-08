@@ -10,6 +10,7 @@ padding: 0;
 }
 
 h1{
+  display:inline;
 font-size: 50px;
 line-height: 1;
 padding: 50px 0 0 10px;
@@ -118,21 +119,28 @@ grid-row-gap: 15px;
 }
 
 header{
-color: black;
-grid-column: 1 / -1;
-grid-row: 1 / auto;
+  display:flex;
+  flex-wrap: wrap;  
+  background-image: ;
+  color: black;
+  grid-column: 1 / -1;
+  grid-row: 1 / auto;
 }
 
 header p{
 font-size: 24px;
-padding: 0 100px;
+padding: 0 50px;
 text-align: center;
 }
 
 header h2{
   padding:25px 0 0;
 }
+header img{
+  display: inline;
+  width: 20%;
 
+}
 .shirt1, .shirt2, .shirt3, .shirt4, .shirt5, .shirt6{
 grid-column: 2 / span 1;
 
