@@ -1,83 +1,80 @@
 html{
     scroll-behavior: smooth;
-  }
-  
-  body{
+}
+body{
   background-color: #d4dbe6;
   font-size: 18px;
   margin: 0;
   padding: 0;
   font-family: athelas, serif;
-  }
+}
   
-  h1{
+h1{
   font-size: 50px;
   line-height: 1;
   padding: 10px 0;
   text-align: center;
-  }
+}
   
-  h2{
+h2{
   font-size: 32px;
   line-height: 1.5;
-  text-align: center;
-  }
+  text-align: center;}
   
-  h3{
+h3{
     font-size: 25px;
     line-height: 1.5;
-    }
+}
   
-  nav{
+nav{
     text-align: left;
     margin:0;
     padding:0;
   
-  }
-  nav ul {
+}
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-  }
-  nav li{
-      flex: 3; 
-      background-color: #cfca9f;  
-      padding:0;
-  }
-  nav .user {
+}
+nav li{
+    flex: 3; 
+    background-color: #cfca9f;  
+    padding:0;
+}
+nav .user {
     flex: 1;
     display:inline;
-  }
-  nav a{
-      color: black;
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-decoration: none;
-      padding: 20px 0px;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-  }
-  
-  nav a:hover{
+}
+nav a{
+    color: black;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 20px 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+} 
+nav a:hover{
   background: #ada986;
-  }
-  nav a:focus{
+}
+nav a:focus{
   text-decoration: underline; 
-  }
+}
 p{
-    display:inline-block;
+    display:inline;
     padding: 20px;
 }
 header{
     color: black;
     grid-row: 2/ span 1;
     grid-column: 1/-1;
-  }
+}
 header h1{
     padding: 30px 0 0 0;
-  }
+}
 .skip a{
     background: white;
     left: 0;
@@ -87,42 +84,49 @@ header h1{
     z-index: 1;
     position: absolute;
     top:-40px;
-    }
-    
+}
 .skip a:hover{
     position: absolute;
     top:0px; 
-    
-    }
+  }
 *:focus{
     text-decoration:underline;
-    }
+  }
 footer{
     background-color: #cfca9f;
     color: black;
     padding-top: 20px;
     text-align: center;
-    }
+  }
 footer ul{
-      list-style-type: none;  
-      margin: 0;
-      padding: 10px;
-    }
+    list-style-type: none;  
+    margin: 0;
+    padding: 10px;
+  }
 footer li a {
-      color:black;
-      padding: 10px;
-      text-decoration: none;
-    }
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+  }
 footer li{
-      display:inline;
-    }
+    display:inline;
+  }
 footer ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 img{
     max-width:35vw;
     max-height:35vw;
     display:inline;
-}
+  }
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; 
+    }
+  .skip a{
+      -webkit-transition: none; 
+      transition: none;        
+    }
+  }
