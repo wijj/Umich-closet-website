@@ -113,21 +113,29 @@ footer li{
 .container{
 display: grid;
 grid-template-columns: 5vw 90vw 5vw;
-grid-template-rows: 200px repeat(14, auto);
+grid-template-rows: 150px repeat(14, auto);
 grid-row-gap: 15px;
 }
 .above2{
   grid-column: 1 / -1;
   grid-row: 1/ span 1;
   z-index: -1;
-
+}
+.above2 img{
+  object-fit: cover;
 }
 .above1{
-  margin: auto;
-  width:40%;
-  animation: loadingt 3s ease-out forwards;
+  -webkit-animation: loading 3s ease-in-out;
+  -moz-animation: loading 3s ease-in-out;
+  -o-animation: loading 3s ease-in-out;
+  animation: loadingin 3s ease-in-out;
   grid-column:1/-1;
   grid-row: 1/ span 1;
+}
+.above1 img{
+  max-height:150px;
+  max-width:auto;
+  object-fit: contain;
 }
 header{
   color: black;
@@ -153,7 +161,6 @@ grid-column: 2 / span 1;
 img{
   width:100%;
   height:100%;
-  object-fit:cover;
 }
 
 .shirt1-image, .shirt2-image, .shirt3-image, .shirt4-image, .shirt5-image, .shirt6-image{
@@ -217,15 +224,14 @@ margin: auto;
     align-self:center;
   }
   .above1{
-    grid-column: 2/ span 1;
-    justify-self: start;
+    grid-column: 1/ -1;
+    grid-row: 1 /span 1;
   }
-  
-  img.logo{
-    width:40%;
-    height:40%;
+  .above1 img{
+    max-height:200px;
+    max-width:auto;
+    object-fit: contain;
   }
-
   header h2{
     padding: 0 0 50px 0;
   }
@@ -260,25 +266,29 @@ margin: auto;
     grid-column: 1 /span 1;
   }
   }
-/*You do not need to modify any code below this line.
-It is included for accessibility to turn off animations
-and movement for people who have modified their 
-preferences to reduce motion.*/
 
 @media screen and (prefers-reduced-motion: reduce){
 html{
-    scroll-behavior: auto; /* Removes scroll animation */
+    scroll-behavior: auto; 
 }
-
 .skip a{
-  -webkit-transition: none; /* sets to default setting */
-  transition: none;        /* sets to default setting */
+  -webkit-transition: none; 
+  transition: none;        
  }
 
-/*Turn off parallax*/
-header{
-  background-attachment: initial;
+.loading{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
 }
+.above1{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
 }
 .loading{
   width: 100%;
@@ -288,6 +298,9 @@ header{
   top: 0px;
   left: 0px;
   display: block;
+  -webkit-animation: loading 2s ease-in-out;
+  -moz-animation: loading 2s ease-in-out;
+  -o-animation: loading 2s ease-in-out;
   animation: loading 2s ease-in-out;
   opacity: 0;
 
@@ -298,9 +311,42 @@ header{
   80% {opacity: 1;}
   100% {opacity: 0;}
 }
-@keyframes loadingt{
+@-moz-keyframes loading {
+  0%   {opacity:1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes loading {
+  0%   {opacity:1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-ms-keyframes loading {
+  0%   {opacity:1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes loadingin{
   0%   {opacity:0;}
   10% {opacity: 0;}
   80% {opacity: 1;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes loadingin{
+  0%   {opacity:0;}
+  10% {opacity: 0;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes loadingin{
+  0%   {opacity:0;}
+  10% {opacity: 0;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes loadingin{
+  0%   {opacity:0;}
+  10% {opacity: 0;}
+  60% {opacity: 1;}
   100% {opacity: 1;}
 }
