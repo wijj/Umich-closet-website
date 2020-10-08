@@ -10,10 +10,9 @@ padding: 0;
 }
 
 h1{
-  display:inline;
 font-size: 50px;
 line-height: 1;
-padding: 50px 0 0 10px;
+padding: 10px 0;
 text-align: center;
 }
 
@@ -110,37 +109,40 @@ footer li{
   display:inline;
 }
 
-
 .container{
 display: grid;
 grid-template-columns: 5vw 90vw 5vw;
 grid-template-rows: repeat(14, auto);
 grid-row-gap: 15px;
 }
-
-header{
-  display:flex;
-  flex-wrap: wrap;  
-  background-image: ;
-  color: black;
+.above2{
   grid-column: 1 / -1;
-  grid-row: 1 / auto;
+  grid-row: 1/ span 1;
+  z-index: -1;
 }
-
+.above1{
+  margin: auto;
+  width:40%;
+  grid-column:1/-1;
+  grid-row: 1/ span 1;
+}
+header{
+  color: black;
+  grid-row: 2/ span 1;
+  grid-column: 1/-1;
+}
+header h1{
+  padding: 50px 0 0 0;
+}
 header p{
-font-size: 24px;
-padding: 0 50px;
-text-align: center;
+  padding: 5px 25px 50px 25px;
+  font-size: 24px;
+  text-align: center;
 }
-
 header h2{
-  padding:25px 0 0;
+  padding: 0 13px 0 13px;
 }
-header img{
-  display: inline;
-  width: 20%;
 
-}
 .shirt1, .shirt2, .shirt3, .shirt4, .shirt5, .shirt6{
 grid-column: 2 / span 1;
 
@@ -158,7 +160,7 @@ grid-column: 2 / span 1;
   grid-row: 3/ span 1;
 } 
 .shirt1-image{
-grid-row: 2/ span 1;
+grid-row: 3/ span 1;
 }
 
 .shirt2{
