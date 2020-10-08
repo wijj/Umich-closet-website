@@ -113,17 +113,19 @@ footer li{
 .container{
 display: grid;
 grid-template-columns: 5vw 90vw 5vw;
-grid-template-rows: repeat(15, auto);
+grid-template-rows: 200px repeat(14, auto);
 grid-row-gap: 15px;
 }
 .above2{
   grid-column: 1 / -1;
   grid-row: 1/ span 1;
   z-index: -1;
+
 }
 .above1{
   margin: auto;
   width:40%;
+  animation: loadingt 3s ease-out forwards;
   grid-column:1/-1;
   grid-row: 1/ span 1;
 }
@@ -151,7 +153,7 @@ grid-column: 2 / span 1;
 img{
   width:100%;
   height:100%;
-  object-fit:contain;
+  object-fit:cover;
 }
 
 .shirt1-image, .shirt2-image, .shirt3-image, .shirt4-image, .shirt5-image, .shirt6-image{
@@ -223,6 +225,7 @@ margin: auto;
     width:40%;
     height:40%;
   }
+
   header h2{
     padding: 0 0 50px 0;
   }
@@ -276,4 +279,28 @@ html{
 header{
   background-attachment: initial;
 }
+}
+.loading{
+  width: 100%;
+  height: 100%;
+  background: #d4dbe6;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: block;
+  animation: loading 2s ease-in-out;
+  opacity: 0;
+
+}
+
+@keyframes loading {
+  0%   {opacity:1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes loadingt{
+  0%   {opacity:0;}
+  10% {opacity: 0;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
 }
