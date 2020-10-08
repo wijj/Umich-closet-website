@@ -47,6 +47,7 @@ nav li{
 }
 nav .user {
   flex: 1;
+  display:inline;
 }
 nav a{
     color: black;
