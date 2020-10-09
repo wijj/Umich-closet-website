@@ -300,6 +300,10 @@ html{
   display: block;
   visibility: hidden;
   transition: visibility 3.1s linear;
+  -webkit-transition: visibility 3.1s linear;
+  -moz-transition: visibility 3.1s linear;
+  -ms-transition: visibility 3.1s linear;
+  -o-transition: visibility 3.1s linear;
   -webkit-animation: loading 3.1s ease-out;
   -moz-animation: loading 3.1s ease-out;
   -o-animation: loading 3.1s ease-out;
