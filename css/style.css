@@ -281,6 +281,11 @@ html{
   -moz-animation: none;
   -o-animation: none;
   animation: none;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
 }
 .above1{
   -webkit-animation: none;
@@ -288,8 +293,8 @@ html{
   -o-animation: none;
   animation: none;
 }
-
 }
+
 .loading{
   width: 100%;
   height: 100%;
