@@ -193,6 +193,7 @@ footer ul{
   grid-template-columns: 5vw  25vw 20vw 20vw  25vw 5vw;
   grid-template-rows: auto auto 40vw auto;
   justify-content: center;
+  padding: 0 0 100px 0;
 }
 .pheader{
   padding: 100px 0 0 0;
@@ -239,6 +240,10 @@ h3{
   max-width: 40vw;
   margin:auto;
   padding: 5px 0 30px;
+}
+.ccontainer{
+  text-align: center;
+  display:grid;
 }
 @media all and (min-width: 800px){
   .me{
