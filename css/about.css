@@ -140,6 +140,7 @@ footer ul{
   grid-column: 2 / span 1;
   background-color:#d4dbe6;
   grid-row: 2/ span 1;
+  text-align: center;
 }
 
 .vheader{
