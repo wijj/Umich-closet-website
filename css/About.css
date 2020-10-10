@@ -24,6 +24,7 @@ h2{
 h3{
     font-size: 25px;
     line-height: 1.5;
+    font-family: athelas, serif;
 }
   
 nav{
@@ -244,6 +245,44 @@ h3{
 .ccontainer{
   text-align: center;
   display:grid;
+  grid-template-columns: 5vw 40vw 10vw 40vw 5vw;
+  grid-template-rows: auto 20vh;
+}
+.ccontainer img{
+  object-fit: cover;
+  grid-row: 2 /span 1;
+  grid-column: 2 /span 1;
+  object-fit: scale-down;
+  width:100%;
+  height:100%;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+}
+.ccontainer a{
+  grid-row: 2/ span 1;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: athelas, serif;
+  color:black;
+}
+.thirda, .fourtha{
+  
+  justify-content: center;
+  align-self: center;
+  z-index: 3;
+  text-align: center;
+}
+.firsta,.thirda{
+  grid-column: 2 /span 1;
+}
+.seconda,.fourtha{
+  grid-column: 4/ span 1;
+}
+.ccontainer p{
+  grid-row: 1 / span 1;
+  grid-column: 1 / -1;
 }
 @media all and (min-width: 800px){
   .me{
