@@ -95,6 +95,7 @@ background-color: #cfca9f;
 color: black;
 padding-top: 20px;
 text-align: center;
+
 }
 footer ul{
   list-style-type: none;  
@@ -109,6 +110,14 @@ footer li a {
 footer li{
   display:inline;
 }
+.fleximage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40vw;
+  margin:auto;
+  padding: 5px 0 30px;
+  }
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; 
