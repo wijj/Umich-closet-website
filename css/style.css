@@ -146,7 +146,7 @@ header h1{
   padding: 30px 0 0 0;
 }
 header p{
-  padding: 5px 25px 50px 25px;
+  padding: 5px 25px 0px 25px;
   font-size: 24px;
   text-align: center;
 }
@@ -214,11 +214,15 @@ padding: 30px;
 margin: auto;
 
 }
+.fleximage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40vw;
+  margin:auto;
+  padding: 5px 0 30px;
+}
 @media all and (min-width: 800px){
-  nav{
-    text-align: right;
-    margin: auto 0;
-  }
   img{
     object-fit:cover;
     align-self:center;
@@ -238,11 +242,14 @@ margin: auto;
   
   .container{
     display:grid;
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: 200px auto 400px 400px 400px 400px 400px 400px;
+    grid-template-columns: 1vw 20vw 58vw 20vw 1vw;
+    grid-template-rows: 200px auto 400px 400px 400px 400px 400px 400px auto;
   }
-  .shirt1, .shirt2, .shirt3, .shirt4,.shirt5,.shirt6{
-    grid-column: 2/ span 1;
+  .shirt1, .shirt3, .shirt5{
+    grid-column: 3/ span 2;
+  }
+  .shirt2, .shirt4,.shirt6{
+    grid-column: 2/ span 2;
   }
   .shirt1-image,.shirt1{
     grid-row: 3/ span 1;
@@ -262,10 +269,15 @@ margin: auto;
   .shirt6-image,.shirt6{
     grid-row: 8/ span 1;
   }
-  .shirt1-image, .shirt2-image, .shirt3-image,.shirt4-image,.shirt5-image,.shirt6-image{
-    grid-column: 1 /span 1;
+  .shirt1-image,  .shirt3-image,.shirt5-image{
+    grid-column: 2 /span 1;
+  }
+  .shirt2-image,.shirt4-image,.shirt6-image{
+    grid-column:  4/span 1;
+
   }
   }
+
 
 @media screen and (prefers-reduced-motion: reduce){
 html{
