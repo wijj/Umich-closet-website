@@ -121,7 +121,9 @@ footer ul{
 .me{
   display: grid;
   grid-template-columns: 5vw 45vw 45vw 5vw;
-  grid-template-rows: auto 30vh;
+  grid-template-rows: auto;
+  padding: 30px 0;
+  padding: 0 0 100px 0;
 }
 .me img{
   grid-column: 2 / span 1;
@@ -136,32 +138,31 @@ footer ul{
   grid-column: 3 / span 1;
   background-color:#d4dbe6;
 }
+.vheader{
+  background-color: #cfca9f;
+}
 .vcontainer{
   display: grid;
-  grid-template-columns: 5vw 18vw 18vw 18vw 18vw 18vw 5vw;
-  grid-template-rows: auto 20vh 20vh 20vh;
+  grid-template-columns: 5vw auto auto auto auto auto 5vw;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
   text-align: center;
   background-color: #cfca9f;
-  padding: 0 0 15px 0;
-}
-.vflex{
-  grid-row: 3/ span 1;
-  display:flex;
 }
 .vcontainer p{
   grid-column: 2/7;
   grid-row: 1 / span 1;
   background-color: #cfca9f;
-  padding: 15px 0;
-  flex: 1;
+  padding: 0 0 30px 0;
+  margin:0;
 }
 .vcontainer h3{
   grid-row: 3/ span 1;
-  z-index: 1;
   background-color: #cfca9f;
   justify-content: center;
   align-self: center;
   z-index: 2;
+  font-size: 4vw;
+  text-align: center;
 }
 .vcontainer img{
   object-fit: cover;
@@ -171,7 +172,6 @@ footer ul{
   height:100%;
   max-width: 100%;
   max-height: 100%;
-  background-color: #red;
 }
 .vcontainer img:nth-child(1), .vcontainer h3:nth-child(6){
   grid-column: 2 /span 1;
@@ -193,6 +193,9 @@ footer ul{
   grid-template-columns: 5vw  25vw 20vw 20vw  25vw 5vw;
   grid-template-rows: auto auto 40vw auto;
   justify-content: center;
+}
+.pheader{
+  padding: 100px 0 0 0;
 }
 h3{
   text-align: center;
@@ -241,10 +244,21 @@ h3{
   .me{
     display: grid;
     grid-template-columns: 5vw 20vw 70vw 5vw;
-    grid-template-rows: 40vh 30vh;
+    grid-template-rows: 40vh 10vh;
     justify-content: center;
     align-items: center;
   }
+  .vcontainer h3{
+    font-size: 3.5vw;
+  }
+  .vcontainer{
+    display: grid;
+    grid-template-columns: 5vw auto auto auto auto auto 5vw;
+    grid-template-rows: 10vh 20vh 20vh 20vh 10vh;
+    text-align: center;
+    background-color: #cfca9f;
+  }
+
 
 }
 
