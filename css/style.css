@@ -83,7 +83,7 @@ position: absolute;
 top:-40px;
 }
 
-.skip a:hover{
+.skip a:focus{
 position: absolute;
 top:0px; 
 
@@ -121,6 +121,11 @@ footer li{
   }
 .on{
   text-decoration: underline;
+  }
+.text-block{
+  border: 3px solid black;
+  padding: 30px;
+  margin: auto;
   }
 @media screen and (prefers-reduced-motion: reduce){
   html{
