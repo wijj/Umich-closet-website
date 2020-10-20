@@ -51,7 +51,6 @@ img{
   -moz-animation: lspin 4s linear infinite;
   -o-animation: lspin 4s linear infinite;
   animation: lspin 4s linear infinite;
-  background-color: black;
 }
 .f1{
   height:5vw;
@@ -61,8 +60,8 @@ img{
   animation: rspin 4s linear infinite;
   top:36vh;
   left:5vw;
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
 }
 .f2{
   -webkit-animation: rspin 4s linear infinite;
@@ -71,8 +70,8 @@ img{
   animation: rspin 4s linear infinite;
   top:33vh;
   left:13vw;
-  -webkit-animation-delay: -0.5s;
-  animation-delay: -0.5s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 .f3{
   -webkit-animation: rspin 4s linear infinite;
@@ -89,14 +88,14 @@ img{
 .f5{
   top:33vh;
   right:13vw;
-  -webkit-animation-delay: -0.1s;
-  animation-delay: -0.1s;
+  -webkit-animation-delay: -2.6s;
+  animation-delay: -2.6s;
 }
 .f6{
   top:36vh;
   right:21vw;
-  -webkit-animation-delay: -0.2s;
-  animation-delay: -0.2s;
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
 
 }
 
