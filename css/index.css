@@ -136,14 +136,14 @@ margin: auto;
   
   .container{
     display:grid;
-    grid-template-columns: 1vw 20vw 58vw 20vw 1vw;
+    grid-template-columns: 1vw 20vw  1vw 56vw 1vw 20vw 1vw;
     grid-template-rows: 200px auto 400px 400px 400px 400px 400px 400px auto;
   }
   .shirt1, .shirt3, .shirt5{
-    grid-column: 3/ span 2;
+    grid-column: 4/ span 3;
   }
   .shirt2, .shirt4,.shirt6{
-    grid-column: 2/ span 2;
+    grid-column: 2/ span 3;
   }
   .shirt1-image,.shirt1{
     grid-row: 3/ span 1;
@@ -167,7 +167,7 @@ margin: auto;
     grid-column: 2 /span 1;
   }
   .shirt2-image,.shirt4-image,.shirt6-image{
-    grid-column:  4/span 1;
+    grid-column:  6/span 1;
 
   }
   }

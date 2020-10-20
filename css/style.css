@@ -136,4 +136,13 @@ footer li{
     display: flex;
     flex-flow: row;
   }
+  nav li{
+    flex: 3; 
+    background-color: #cfca9f;  
+    padding:0;
+}
+nav .user {
+  flex: 1;
+  display:inline;
+}
 }
