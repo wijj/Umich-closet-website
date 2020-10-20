@@ -119,6 +119,9 @@ footer li{
   margin:auto;
   padding: 5px 0 30px;
   }
+.on{
+  text-decoration: underline;
+  }
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; 
@@ -140,9 +143,9 @@ footer li{
     flex: 3; 
     background-color: #cfca9f;  
     padding:0;
-}
-nav .user {
-  flex: 1;
-  display:inline;
-}
+  }
+  nav .user {
+    flex: 1;
+    display:inline;
+  }
 }
