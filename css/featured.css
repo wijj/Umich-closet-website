@@ -96,7 +96,6 @@ img{
   right:21vw;
   -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
-
 }
 
 @keyframes lspin {
@@ -228,5 +227,45 @@ img{
   }
   .f6{
     top:13vh;
+  }
+  }
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  .flower{
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+  }
+  .f1{
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    -webkit-animation-delay: none;
+    animation-delay: none;
+  }
+  .f2{
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    -webkit-animation-delay: none;
+    animation-delay: none;
+  }
+  .f3{
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+  }
+  .f5{
+    -webkit-animation-delay: none;
+    animation-delay: none;
+  }
+  .f6{
+    -webkit-animation-delay: none;
+    animation-delay: none;
   }
   }
