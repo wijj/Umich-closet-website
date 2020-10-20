@@ -1,8 +1,14 @@
+nav ul li:nth-child(1){
+  background-color:#ada986;
+}
+.on{
+  text-decoration: underline;
+}
 .container{
-display: grid;
-grid-template-columns: 5vw 90vw 5vw;
-grid-template-rows: 150px repeat(14, auto);
-grid-row-gap: 15px;
+  display: grid;
+  grid-template-columns: 5vw 90vw 5vw;
+  grid-template-rows: 150px repeat(14, auto);
+  grid-row-gap: 15px;
 }
 .above2{
   grid-column: 1 / -1;

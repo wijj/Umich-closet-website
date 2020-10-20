@@ -39,14 +39,15 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-flow: row wrap;
 }
 nav li{
-    flex: 3; 
+    flex: 1 1 50%; 
     background-color: #cfca9f;  
     padding:0;
 }
 nav .user {
-  flex: 1;
+  flex: 1 1 50%;
   display:inline;
 }
 nav a{
@@ -126,3 +127,13 @@ footer li{
     -webkit-transition: none; 
     transition: none;        
    }
+  }
+@media all and (min-width: 800px){
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+  }
+}
