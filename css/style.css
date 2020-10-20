@@ -86,7 +86,6 @@ top:-40px;
 .skip a:focus{
 position: absolute;
 top:0px; 
-
 }
 *:focus{
 text-decoration:underline;
