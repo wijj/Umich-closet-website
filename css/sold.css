@@ -14,7 +14,6 @@ nav ul li:nth-child(3){
   padding: 3vw;
 }
 .flip-card-inner {
-  border: 2px solid #000000;
   padding: 4px;
   position: relative;
   width: 100%;
@@ -23,7 +22,7 @@ nav ul li:nth-child(3){
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner {
+.flip-card:focus, .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 .flip-card-front, .flip-card-back {
