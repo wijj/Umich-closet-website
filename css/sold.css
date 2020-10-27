@@ -8,8 +8,8 @@ nav ul li:nth-child(3){
 }
 .flip-card {
   background-color: transparent;
-  width: 30vh;
-  height: 30vw;
+  width: 200px;
+  height: 200px;
   perspective: 1000px;
   padding: 3vw;
 }
@@ -48,9 +48,10 @@ img{
   margin:auto;
 }
 @media all and (min-width: 800px){
+  .flip-card {
+    width: 300px;
+    height: 300px;  
 }
-
-
 @media screen and (prefers-reduced-motion: reduce){
 html{
     scroll-behavior: auto; 
