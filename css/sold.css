@@ -41,6 +41,13 @@ nav ul li:nth-child(3){
   color: black;
   transform: rotateY(180deg);
 }
+h2{
+  text-align: center;
+  margin: auto;
+  padding:20px;
+  align-self: center;
+  justify-content: center;
+}
 img{
   object-fit: cover;
   width: 100%;
