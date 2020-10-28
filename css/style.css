@@ -7,7 +7,7 @@ background-color: #d4dbe6;
 font-size: 18px;
 margin: 0;
 padding: 0;
-font-family:'Nunito';
+font-family: 'Nunito';
 }
 
 h1{
@@ -126,6 +126,7 @@ footer li{
   padding: 30px;
   margin: auto;
   }
+
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; 
