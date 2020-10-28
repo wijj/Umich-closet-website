@@ -160,6 +160,7 @@ margin:auto;
 padding: 5px 0 30px;
 }
 .ccontainer{
+margin:0 5vw;
 text-align: center;
 display:grid;
 grid-template-columns: 5vw 40vw 10vw 40vw 5vw;
@@ -412,6 +413,24 @@ input[type=submit]:hover {
     grid-row: 1/ span 1;
     grid-column: 1 / -1;
     }
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
 }
 
 
