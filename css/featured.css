@@ -25,7 +25,7 @@ p{
 .container{
   display: grid;
   grid-template-columns: 5vw 90vw 5vw;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
   grid-row-gap: 15px;
   }
 .shirt1-image{
@@ -36,6 +36,14 @@ p{
 .shirt1{
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
+}
+.shirt2-image{
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+.shirt2{
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
 }
 img{
   width:100%;
@@ -58,7 +66,7 @@ img{
   -moz-animation: rspin 4s linear infinite;
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
-  top:210px;
+  top:360px;
   left:5vw;
   -webkit-animation-delay: -3s;
   animation-delay: -3s;
@@ -68,7 +76,7 @@ img{
   -moz-animation: rspin 4s linear infinite;
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
-  top:195px;
+  top:345px;
   left:13vw;
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
@@ -78,21 +86,21 @@ img{
   -moz-animation: rspin 4s linear infinite;
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
-  top:210px;
+  top:360px;
   left:21vw;
 }
 .f4{
-  top:210px;
+  top:360px;
   right:5vw;
 }
 .f5{
-  top:195px;
+  top:345px;
   right:13vw;
   -webkit-animation-delay: -2.6s;
   animation-delay: -2.6s;
 }
 .f6{
-  top:210px;
+  top:360px;
   right:21vw;
   -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
@@ -200,33 +208,41 @@ img{
   .container{
       display:grid;
       grid-template-columns: 1vw 20vw  1vw 56vw 1vw 20vw 1vw;
-      grid-template-rows: auto auto 40vh auto;
+      grid-template-rows: repeat(2,auto 40vh auto);
     }
   .shirt1{
       grid-column: 4/ span 3;
-      grid-row: 3/ span 1;
+      grid-row: 2/ span 1;
     }
   .shirt1-image{
       grid-column: 2 /span 1;
-      grid-row: 3/ span 1;
+      grid-row: 2/ span 1;
+    }
+   .shirt2{
+    grid-column: 2 /span 3;
+    grid-row: 5/ span 1;
+    }
+   .shirt2-image{
+    grid-column: 6 /span 1;
+    grid-row: 5/ span 1;
     }
   .f1{
-    top:85px;
+    top:235px;
   }
   .f2{
-    top:70px;
+    top:220px;
   }
   .f3{
-    top:85px;
+    top:235px;
   }
   .f4{
-    top:85px;
+    top:235px;
   }
   .f5{
-    top:70px;
+    top:220px;
   }
   .f6{
-    top:85px;
+    top:235px;
   }
   }
 

@@ -70,8 +70,9 @@ margin:0;
   justify-content: center;
   align-self: center;
   z-index: 2;
-  font-size: 7vw;
+  font-size: 5vw;
   text-align: center;
+  padding: 0 20px;
 }
 .vcontainer img{
   object-fit: cover;
@@ -204,7 +205,6 @@ grid-column: 2 / span 3;
 form {
   margin: 50px 5vw 100px 5vw;
   padding: 1vw;
-  border: 3px solid #000000;
 }
 
 legend{ 
@@ -264,9 +264,9 @@ input[type=submit]:hover {
     visibility:visible;
     display:inline;
   }
-
   .vcontainer h3{
     font-size: 3.5vw;
+    padding: 0 0 0 0;
   }
   .vcontainer{
     display: grid;
@@ -305,15 +305,6 @@ input[type=submit]:hover {
     padding: 0 0 30px 0;
     margin:0;
   }
-  .vcontainer h3{
-    grid-row: 3/ span 1;
-    background-color: #cfca9f;
-    justify-content: center;
-    align-self: center;
-    z-index: 2;
-    font-size: 4vw;
-    text-align: center;
-    }
   .vcontainer img{
     object-fit: cover;
     grid-row: 2/ span 3;
