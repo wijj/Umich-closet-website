@@ -57,10 +57,22 @@ img{
 @media all and (min-width: 800px){
   .flip-card {
     width: 300px;
-    height: 300px;  
+    height: 300px;   
+  }
 }
 @media screen and (prefers-reduced-motion: reduce){
-html{
-    scroll-behavior: auto; 
+  html{
+      scroll-behavior: auto; 
+  }
+  .flip-card-front, .flip-card-back {
+    position: static;
+    transform:none;
+  }
+  .flip-card-back{
+    background-color: transparent;
+    visibility: hidden;
+  }
+  .flip-card:focus, .flip-card:hover .flip-card-inner {
+  transform: none;
 }
 }
