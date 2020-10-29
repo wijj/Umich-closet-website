@@ -33,7 +33,7 @@ background-color: #d4dbe6;
 font-size: 18px;
 margin: 0;
 padding: 0;
-font-family: 'Nunito';
+font-family: 'Graphik';
 }
 
 h1{
@@ -41,6 +41,7 @@ font-size: 50px;
 line-height: 1;
 padding: 10px 0;
 text-align: center;
+font-family: 'Graphik',sans-serif;
 }
 
 h2{
@@ -68,33 +69,68 @@ nav ul {
   flex-flow: row wrap;
 }
 nav li{
-    flex: 1 1 50%; 
-    background-color: #cfca9f;  
-    padding:0;
+  position: relative;
+  flex: 1 1 50%; 
+  background-color: #cfca9f;  
+  padding:0;
 }
 nav .user {
+  position: relative;
   flex: 1 1 50%;
   display:inline;
 }
 nav a{
-    color: black;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-decoration: none;
-    padding: 20px 0px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 nav a img{
   width:16px;
   height:16px;
 }
-nav a:hover{
-background: #ada986;
+nav .navimage{
+  object-fit: cover;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  width:0vw;
+  margin:auto;
+  transition: width 2s;
+}
+nav a:hover .home,nav a:hover .about{
+  width:60px;
+}
+nav a:hover .featured{
+  width:85px;
+}
+nav a:hover .sold{
+  width:50px;
+}
+nav a:hover .icon{
+  width:25px;
+}
+.on .home,.on .about{
+  width:60px;
+}
+.on .featured{
+  width:85px;
+}
+.on .sold{
+  width:50px;
+}
+.on:hover .navimage{
+  width:0px;
 }
 nav a:focus{
-text-decoration: underline; 
+  text-decoration: underline; 
 }
 footer ul{
   list-style: none;
@@ -147,12 +183,9 @@ footer li{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 40vw;
+  width:40vw;
   margin:auto;
   padding: 5px 0 30px;
-  }
-.on{
-  text-decoration: underline;
   }
 .text-block{
   padding: 30px;
@@ -162,7 +195,6 @@ img{
   width: 100%;
   height: 100%;
 }
-
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; 
@@ -171,6 +203,13 @@ img{
     -webkit-transition: none; 
     transition: none;        
    }
+  nav .navimage{
+    display:none;
+  }
+  nav a:hover{
+    text-decoration: underline;
+  }
+  
   }
 @media all and (min-width: 800px){
   nav ul {
@@ -182,7 +221,6 @@ img{
   }
   nav li{
     flex: 3; 
-    background-color: #cfca9f;  
     padding:0;
   }
   nav .user {

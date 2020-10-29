@@ -1,7 +1,4 @@
 
-nav ul li:nth-child(2){
-  background-color:#ada986;
-}
 .hcontainer{
   display:flex;
   flex-direction: column;

@@ -1,6 +1,4 @@
-nav ul li:nth-child(1){
-  background-color:#ada986;
-}
+
 header{
   color: black;
   grid-row: 2/ span 1;
@@ -39,7 +37,9 @@ img{
   width:100%;
   height:100%;
   }
-    
+.text-block{
+  text-align: center;
+}
 .shirt1-image, .shirt2-image, .shirt3-image, .shirt4-image, .shirt5-image, .shirt6-image{
   grid-column: 2 / span 1; 
   }
@@ -115,9 +115,11 @@ img{
   }
   .shirt1, .shirt3, .shirt5{
     grid-column: 4/ span 3;
+    text-align: left;
   }
   .shirt2, .shirt4,.shirt6{
     grid-column: 2/ span 3;
+    text-align: right;
   }
   .shirt1-image,.shirt1{
     grid-row: 2/ span 1;

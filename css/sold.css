@@ -1,6 +1,4 @@
-nav ul li:nth-child(3){
-  background-color:#ada986;
-}
+
 .container{
   display:flex;
   flex-flow: row wrap;

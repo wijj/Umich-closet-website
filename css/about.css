@@ -1,10 +1,4 @@
 
-nav ul li:nth-child(4){
-background-color:#ada986;
-}
-.on{
-  text-decoration: underline;
-}
 p{
   display:inline-block;
   padding: 20px;
