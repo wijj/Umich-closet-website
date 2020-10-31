@@ -64,7 +64,7 @@ img{
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
   top:360px;
-  left:5vw;
+  left:4vw;
   -webkit-animation-delay: -3s;
   animation-delay: -3s;
 }
@@ -74,7 +74,7 @@ img{
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
   top:345px;
-  left:13vw;
+  left:8vw;
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
@@ -84,21 +84,21 @@ img{
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
   top:360px;
-  left:21vw;
+  left:12vw;
 }
 .f4{
   top:360px;
-  right:5vw;
+  right:4vw;
 }
 .f5{
   top:345px;
-  right:13vw;
+  right:8vw;
   -webkit-animation-delay: -2.6s;
   animation-delay: -2.6s;
 }
 .f6{
   top:360px;
-  right:21vw;
+  right:12vw;
   -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
 }
@@ -225,21 +225,27 @@ img{
     }
   .f1{
     top:235px;
+    left:5vw;
   }
   .f2{
     top:220px;
+    left:13vw;
   }
   .f3{
     top:235px;
+    left:21vw;
   }
   .f4{
     top:235px;
+    right:5vw;
   }
   .f5{
     top:220px;
+    right:13vw;
   }
   .f6{
     top:235px;
+    right:21vw;
   }
   }
 
