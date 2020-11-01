@@ -159,6 +159,7 @@ top:0px;
 }
 *:focus{
 text-decoration:underline;
+outline:5;
 }
 footer{
 background-color: #cfca9f;

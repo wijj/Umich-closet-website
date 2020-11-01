@@ -20,7 +20,7 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.flip-card:focus, .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
   transform: rotateY(180deg);
 }
 .flip-card-front, .flip-card-back {

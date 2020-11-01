@@ -76,19 +76,19 @@ margin:0;
   max-width: 100%;
   max-height: 100%;
 }
-.vcontainer img:nth-child(11), .vcontainer h3:nth-child(6){
+.vcontainer img:nth-child(12), .vcontainer h3:nth-child(7){
 grid-row: 2 /span 1;
 }
-.vcontainer img:nth-child(12), .vcontainer h3:nth-child(7){
+.vcontainer img:nth-child(13), .vcontainer h3:nth-child(8){
 grid-row: 3 /span 1;
 }
-.vcontainer img:nth-child(13), .vcontainer h3:nth-child(8){
+.vcontainer img:nth-child(14), .vcontainer h3:nth-child(9){
 grid-row: 4 /span 1;
 }
-.vcontainer img:nth-child(14), .vcontainer h3:nth-child(9){
+.vcontainer img:nth-child(15), .vcontainer h3:nth-child(10){
 grid-row: 5 /span 1;
 }
-.vcontainer img:nth-child(15),.vcontainer h3:nth-child(10){
+.vcontainer img:nth-child(16),.vcontainer h3:nth-child(11){
 grid-row: 6 /span 1;
 }
 .vhide{
@@ -116,32 +116,32 @@ text-align: center;
   max-height: 100%;
   justify-self: center;
   }
-.first,.pcontainer img:last-of-type, .pcontainer h3:last-of-type, .pcontainer p:first-of-type, .pcontainer p:last-of-type, .pcontainer img:first-of-type, .pcontainer h3:first-of-type{
+.first, .pcontainer img:nth-child(3), .pcontainer h3:nth-child(2), .pcontainer p:nth-child(4), .pcontainer p:nth-child(7), .pcontainer img:nth-child(6), .pcontainer h3:nth-child(5){
   grid-column: 2/ span 1;
   }
 .first{
   grid-row: 1/ span 1;
   text-align: center;
   }
-.pcontainer h3:first-of-type{
+.pcontainer h3:nth-child(2){
   grid-row: 2/ span 1;
   text-align: center;
   }
-.pcontainer img:first-of-type{
+.pcontainer img:nth-child(3){
   grid-row: 3/ span 1;
   }
-.pcontainer p:first-of-type{
+.pcontainer p:nth-child(4){
   grid-row: 4/ span 1;
   text-align: center;
   }
-.pcontainer h3:last-of-type{
+.pcontainer h3:nth-child(5){
   grid-row: 5/ span 1;
   text-align: center;
   }
-.pcontainer img:last-of-type{
+.pcontainer img:nth-child(6){
     grid-row: 6/ span 1;
   }
-.pcontainer p:last-of-type{
+.pcontainer p:nth-child(7){
   grid-row: 7/ span 1;
   text-align: center;
   }
@@ -235,7 +235,6 @@ input[type=checkbox]{
     display:inline;
     width:inherit;
 }
-
 input[type=submit] {
   background-color: #cfca9f;
   color: black;
@@ -245,7 +244,6 @@ input[type=submit] {
   cursor: pointer;
   width: 100%;
 }
-
 input[type=submit]:hover {
   opacity: 0.8;
 }
@@ -307,48 +305,43 @@ input[type=submit]:hover {
     max-width: 100%;
     max-height: 100%;
   }
-  .vcontainer img:nth-child(1){
-    grid-column: 2 /span 1;
-    grid-row: 2/ span 3;
-    transform:rotate(0deg);
-  } 
-  .vcontainer h3:nth-child(6){
-    grid-column: 2 /span 1;
-    grid-row: 3/ span 1;
-  }
   .vcontainer img:nth-child(2){
-    grid-column: 3 /span 1;
+    grid-column: 2 /span 1;
     grid-row: 2/ span 3;
-    transform:rotate(0deg);
-  } 
+    } 
   .vcontainer h3:nth-child(7){
-    grid-column: 3 /span 1;
+    grid-column: 2 /span 1;
     grid-row: 3/ span 1;
   }
   .vcontainer img:nth-child(3){
-    transform:rotate(0deg);
-    grid-column: 4 /span 1;
+    grid-column: 3 /span 1;
     grid-row: 2/ span 3;
   } 
   .vcontainer h3:nth-child(8){
-    grid-column: 4 /span 1;
+    grid-column: 3 /span 1;
     grid-row: 3/ span 1;
   }
   .vcontainer img:nth-child(4){
-    transform:rotate(0deg);
-    grid-column: 5 /span 1;
+    grid-column: 4 /span 1;
     grid-row: 2/ span 3;
   } 
   .vcontainer h3:nth-child(9){
-    grid-column: 5 /span 1;
+    grid-column: 4 /span 1;
     grid-row: 3/ span 1;
   }
   .vcontainer img:nth-child(5){
-    transform:rotate(0deg);
+    grid-column: 5 /span 1;
+    grid-row: 2/ span 3;
+  } 
+  .vcontainer h3:nth-child(10){
+    grid-column: 5 /span 1;
+    grid-row: 3/ span 1;
+  }
+  .vcontainer img:nth-child(6){
     grid-column: 6 /span 1;
     grid-row: 2/ span 3;
   }
-  .vcontainer h3:nth-child(10){
+  .vcontainer h3:nth-child(11){
     grid-column: 6 /span 1;
     grid-row: 3/ span 1;
     }
@@ -373,21 +366,21 @@ input[type=submit]:hover {
     max-width: 100%;
     max-height: 100%;
     }
-  .pcontainer p:first-of-type, .pcontainer img:first-of-type, .pcontainer h3:first-of-type{
+  .pcontainer p:nth-child(4), .pcontainer img:nth-child(3), .pcontainer h3:nth-child(2){
     grid-column: 2/ 4;
     }
-  .pcontainer p:last-of-type, .pcontainer img:last-of-type, .pcontainer h3:last-of-type{
+  .pcontainer p:nth-child(7), .pcontainer img:nth-child(6), .pcontainer h3:nth-child(5){
     grid-column: 4/ 6;
     }
-  .pcontainer p:last-of-type{
-    grid-row: 4 / span 1;
-  }
-  .pcontainer img:last-of-type{
+  .pcontainer img:nth-child(6){
     grid-row: 3 / span 1;
-  }
-  .pcontainer h3:last-of-type{
+    }
+  .pcontainer p:nth-child(7){
+    grid-row: 4 / span 1;
+    }
+  .pcontainer h3:nth-child(5){
     grid-row: 2 / span 1;
-  }
+    }
   .first{
     grid-row: 1/ span 1;
     grid-column: 1 / -1;

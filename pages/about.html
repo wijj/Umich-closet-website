@@ -32,19 +32,20 @@
             <img src='../images/header.jpg' alt="">
           </div>
         </div>
-        <h1>About</h1>
+        <h1 tabindex="0">About</h1>
         <img class='fleximage' src='../images/h-line.png' alt="">
       </header>
 
 
-      <div class='me'>
+      <div tabindex="0" class='me'>
         <img src="../images/joshua-hubbard-l0aOZOmkct4-unsplash.jpg" alt="">
         <!--<span>Photo by <a href="https://unsplash.com/@joshuahubbard?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joshua Hubbard</a> on <a href="https://unsplash.com/collections/12019246/ann-arbor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>-->
         <!--Photo by Hunter Staples on "https://unsplash.com/s/photos/ann-arbor-mi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" Unsplash -->
-      <p>Our business started just like any other small business. I had a dream: being able to transform what I love (shopping for clohtes) into a viable business - and as a University of Michigan student, I figured what better excuse to buy pretty vintange U of M clothing! I am happy to be able to share all of my finds with you, and hope you enjoy my content! Thanks for supporting one woman's dream :)</p>
+      <p >Our business started just like any other small business. I had a dream: being able to transform what I love (shopping for clohtes) into a viable business - and as a University of Michigan student, I figured what better excuse to buy pretty vintange U of M clothing! I am happy to be able to share all of my finds with you, and hope you enjoy my content! Thanks for supporting one woman's dream :)</p>
       </div>
       <h2 class='vheader'>Values</h2>
-      <div class='vcontainer'>
+      <div tabindex="0" class='vcontainer'>
+        <p> Here at UMich closet, we hold several values close to us as we work to bring you the services you know and love</p>
         <img class='vhide' src='../images/v-line.png' alt="">
         <img class='vhide' src='../images/v-line.png' alt="">
         <img class='vhide' src='../images/v-line.png' alt="">
@@ -60,24 +61,22 @@
         <img class='hhide' src='../images/v-line-rotate.png' alt="">
         <img class='hhide' src='../images/v-line-rotate.png' alt="">
         <img class='hhide' src='../images/v-line-rotate.png' alt="">
-        <p> Here at UMich closet, we hold several values close to us as we work to bring you the services you know and love</p>
-
       </div>
 
 
-      <h2 class='pheader'>  Team</h2>
-      <div class='pcontainer'>
-        <h3> John - Head of Design</h3>
-        <h3> Drew - Head of Finance</h3>
-        <img src="../images/john.jpeg" alt="a photo of john">
-        <img src='../images/drew.jpeg' alt='a photo of drew'>
-        <p>John is a junior at the University of Michigan majoring in information science. He specializes in python and also seems to be pretty good at front end design. He likes reading and hiking outside. John runs the development side, which includes branding and also creating this website!</p>
+      <h2 tabindex="0" class='pheader'>  Team</h2>
+      <div tabindex="0" class='pcontainer'>
         <p class='first'> In addition to myself, My boyfriend Drew and my friend John help me run the business, Drew leading finance and John leading design.</p>
+        <h3> John - Head of Design</h3>      
+        <img src="../images/john.jpeg" alt="a photo of john with a dog">
+        <p>John is a junior at the University of Michigan majoring in information science. He specializes in python and also seems to be pretty good at front end design. He likes reading and hiking outside. John runs the development side, which includes branding and also creating this website!</p>
+        <h3> Drew - Head of Finance</h3>
+        <img src='../images/drew.jpeg' alt='a photo of drew with a pie'>
         <p>Drew is a student at the University of Michigan majoring in data science and astrology. I know he is involved in planetary research which is sick. He runs the finance aspects of the business which mainly concern keeping track of money and allocating money for new clothes.</p>
       </div>
 
-        <h2 class='cheader'>Contact</h2>
-        <div class='ccontainer'>
+        <h2 tabindex="0" class='cheader'>Contact</h2>
+        <div tabindex="0" class='ccontainer'>
           <p>The best way to get in contact with me is over instagram! I have linked my instagram below (in addition to linked-in) I will be happy to hear your feedback or concenrns, and if you have pictures you want to submit to the "Featured" section please let me know! I have also included a contact form, however this is not checked nearly as much.</p>
           <a class='firsta' href="https://www.instagram.com/umichcloset/" target="_blank"><img src="../images/button1.png" alt='link to instagram' ></a>
           <a class='seconda' href="https://www.linkedin.com/company/umich-closet/" target="_blank"><img src="../images/button2.png" alt='link to linked-in' ></a>
@@ -95,11 +94,9 @@
               <input required id='email_id' name='Email' type="email" placeholder="Enter Your Email">
           
           
-              <label for ='phone_id'>Your Phone Number</label>
-              <input id='phone_id' name='Phone' type="tel" placeholder="Enter Your Phone # (optional)">
-              
-          
-          
+              <label for ='phone_id'>Your Phone Number (format: xxx-xxx-xxxx)</label>
+              <input pattern='\d{3}-\d{3}-\d{4}' id='phone_id' name='Phone' type="tel" placeholder="Enter Your Phone # (optional)">
+
               <label for='message_id'>Leave A Message</label>
           
               <textarea required id='message_id' name='message' placeholder="Enter Your Message"></textarea></br>
