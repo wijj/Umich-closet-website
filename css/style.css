@@ -105,16 +105,16 @@ nav .navimage{
   margin:auto;
   transition: width 2s;
 }
-nav a:hover .home,nav a:hover .about{
+nav a:hover .home,nav a:hover .about, nav a:focus-within .home, nav a:focus-within .about{
   width:60px;
 }
-nav a:hover .featured{
+nav a:hover .featured, nav a:focus-within .featured{
   width:85px;
 }
-nav a:hover .sold{
+nav a:hover .sold,nav a:focus-within .sold{
   width:50px;
 }
-nav a:hover .icon{
+nav a:hover .icon, nav a:focus .icon{
   width:25px;
 }
 .on .home,.on .about{
@@ -126,7 +126,7 @@ nav a:hover .icon{
 .on .sold{
   width:50px;
 }
-.on:hover .navimage{
+.on:hover .navimage, .on:focus-within .navimage{
   width:0px;
 }
 nav a:focus{
