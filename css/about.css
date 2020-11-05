@@ -68,6 +68,12 @@ margin:0;
   text-align: center;
   padding: 0 20px;
 }
+.vcontainer h3:hover, .vcontainer:focus h3{
+  -webkit-animation: gradient 4s infinite ease-in-out;
+  -moz-animation: gradient 4s infinite ease-in-out;
+  -o-animation: gradient 4s infinite ease-in-out;
+  animation: gradient 4s infinite ease-in-out;
+}
 .vcontainer img{
   object-fit: cover;
   grid-column: 2/ span 3;
@@ -245,7 +251,40 @@ input[type=submit] {
   width: 100%;
 }
 input[type=submit]:hover {
-  opacity: 0.8;
+  background-color:black;
+  color:#cfca9f;
+}
+@keyframes gradient{
+  50%{color:#784844;}
+  59%{color:#b3862e;}
+  68%{color:#447846;}
+  75%{color:#445478;}
+  83%{color:#4d467a;}
+  90%{color:black;}
+}
+@-moz-keyframes gradient{
+  50%{color:#784844;}
+  59%{color:#b3862e;}
+  68%{color:#447846;}
+  75%{color:#445478;}
+  83%{color:#4d467a;}
+  90%{color:black;}
+}
+@-webkit-keyframes gradient{
+  50%{color:#784844;}
+  59%{color:#b3862e;}
+  68%{color:#447846;}
+  75%{color:#445478;}
+  83%{color:#4d467a;}
+  90%{color:black;}
+}
+@-ms-keyframes gradient{
+  50%{color:#784844;}
+  59%{color:#b3862e;}
+  68%{color:#447846;}
+  75%{color:#445478;}
+  83%{color:#4d467a;}
+  90%{color:black;}
 }
 @media all and (min-width: 800px){
   .hhide{
@@ -396,4 +435,10 @@ html{
     -webkit-transition: none; 
     transition: none;        
   }
+.vcontainer h3:hover, .vcontainer:focus h3{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
 }
