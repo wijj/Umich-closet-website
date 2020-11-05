@@ -441,4 +441,8 @@ html{
   -o-animation: none;
   animation: none;
 }
+input[type=submit]:hover {
+  color:black;
+  background-color:#cfca9f;
+}
 }
