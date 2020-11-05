@@ -255,6 +255,9 @@ input[type=submit]:hover {
   background-color:black;
   color:#cfca9f;
 }
+footer p{
+  padding:0px;
+}
 @keyframes gradient{
   50%{color:#784844;}
   68%{color:#447846;}

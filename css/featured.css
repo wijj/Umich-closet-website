@@ -19,6 +19,9 @@ p{
   padding: 2vh 1vw;
   text-align:center;
 }
+footer p{
+  padding: 0px 0px;
+}
 .container{
   display: grid;
   grid-template-columns: 5vw 90vw 5vw;
