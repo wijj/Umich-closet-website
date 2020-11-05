@@ -256,7 +256,6 @@ input[type=submit]:hover {
 }
 @keyframes gradient{
   50%{color:#784844;}
-  59%{color:#b3862e;}
   68%{color:#447846;}
   75%{color:#445478;}
   83%{color:#4d467a;}
@@ -264,7 +263,6 @@ input[type=submit]:hover {
 }
 @-moz-keyframes gradient{
   50%{color:#784844;}
-  59%{color:#b3862e;}
   68%{color:#447846;}
   75%{color:#445478;}
   83%{color:#4d467a;}
@@ -272,7 +270,6 @@ input[type=submit]:hover {
 }
 @-webkit-keyframes gradient{
   50%{color:#784844;}
-  59%{color:#b3862e;}
   68%{color:#447846;}
   75%{color:#445478;}
   83%{color:#4d467a;}
@@ -280,7 +277,6 @@ input[type=submit]:hover {
 }
 @-ms-keyframes gradient{
   50%{color:#784844;}
-  59%{color:#b3862e;}
   68%{color:#447846;}
   75%{color:#445478;}
   83%{color:#4d467a;}
