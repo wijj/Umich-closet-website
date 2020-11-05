@@ -129,6 +129,9 @@ nav a:hover .icon, nav a:focus .icon{
 .on:hover .navimage, .on:focus-within .navimage{
   width:0px;
 }
+.on{
+  text-decoration: underline;
+}
 nav a:focus{
   text-decoration: underline; 
 }
