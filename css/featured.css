@@ -1,4 +1,6 @@
-
+main{
+  margin: 0 5vw;
+}
 .hcontainer{
   display:flex;
   flex-direction: column;
@@ -27,7 +29,6 @@ footer p{
 .container{
   display: flex;
   flex-direction: column;
-  margin: 0px 5vw;
   }
 
 img{
@@ -51,7 +52,7 @@ img{
   -moz-animation: rspin 4s linear infinite;
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
-  top:360px;
+  top:410px;
   left:4vw;
   -webkit-animation-delay: -3s;
   animation-delay: -3s;
@@ -61,7 +62,7 @@ img{
   -moz-animation: rspin 4s linear infinite;
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
-  top:345px;
+  top:395px;
   left:8vw;
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
@@ -71,21 +72,21 @@ img{
   -moz-animation: rspin 4s linear infinite;
   -o-animation: rspin 4s linear infinite;
   animation: rspin 4s linear infinite;
-  top:360px;
+  top:410px;
   left:12vw;
 }
 .f4{
-  top:360px;
+  top:410px;
   right:4vw;
 }
 .f5{
-  top:345px;
+  top:395px;
   right:8vw;
   -webkit-animation-delay: -2.6s;
   animation-delay: -2.6s;
 }
 .f6{
-  top:360px;
+  top:410px;
   right:12vw;
   -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
@@ -193,63 +194,63 @@ img{
     align-items: center;
   }
   .shirt3-image{
-    width: 25vw;
-    height: 25vw;
+    width: 40vw;
+    height: 40vw;
   }
   .shirt2-image{
-    width: 25vw;
-    height: 25vw;
+    width: 40vw;
+    height: 40vw;
    }
   .shirt1-image{
-    width: 25vw;
-    height: 25vw;
+    width: 40vw;
+    height: 40vw;
   }
   .shirt1c{
-    width: 100vw;
-    height: 40vw;
+    width: 95vw;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
   .shirt2c{
-    width: 100vw;
-    height: 40vw;
+    width: 95vw;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
   .shirt3c{
-    width: 100vw;
-    height: 40vw;
+    width: 95vw;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
   .f1{
-    top:305px;
+    top:355px;
     left:5vw;
   }
   .f2{
-    top:290px;
+    top:340px;
     left:13vw;
   }
   .f3{
-    top:305px;
+    top:355px;
     left:21vw;
   }
   .f4{
-    top:305px;
+    top:355px;
     right:5vw;
   }
   .f5{
-    top:290px;
+    top:340px;
     right:13vw;
   }
   .f6{
-    top:305px;
+    top:355px;
     right:21vw;
   }
 }
@@ -297,27 +298,27 @@ img{
       justify-content: space-around;
     }
   .f1{
-    top:235px;
+    top:285px;
     left:5vw;
   }
   .f2{
-    top:220px;
+    top:270px;
     left:13vw;
   }
   .f3{
-    top:235px;
+    top:285px;
     left:21vw;
   }
   .f4{
-    top:235px;
+    top:285px;
     right:5vw;
   }
   .f5{
-    top:220px;
+    top:270px;
     right:13vw;
   }
   .f6{
-    top:235px;
+    top:285px;
     right:21vw;
   }
   }
