@@ -15,7 +15,7 @@ header h1{
 .me{
 display: grid;
 grid-template-columns: 5vw 90vw 5vw;
-grid-template-rows: 40vh auto;
+grid-template-rows: auto;
 justify-content: center;
 align-items: center;
 padding: 0 0 100px 0;
@@ -37,9 +37,46 @@ background-color:#d4dbe6;
 grid-row: 2/ span 1;
 text-align: center;
 }
-
+.cool{
+  display:grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 300px;
+  height: 100px;
+  width:100vw;
+  overflow: hidden;
+}
+.image1c{
+  position:relative;
+  animation: moveoff 4s linear infinite;
+}
+.image2c{
+  position:relative;
+  left:100vw;
+  animation: moveon 4s linear infinite;
+}
+@keyframes moveoff {
+  0% {
+    left:0vw;
+  }
+  100% {
+    left:-100vw;
+  }
+}
+@keyframes moveon {
+  0% {
+    left:100vw;
+  }
+  100% {
+    left:0vw;
+  }
+}
+.cool img{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  height:100px;
+}
 .vheader{
-background-color: #cfca9f;
+background-color:#cfca9f;
 }
 .vcontainer{
 display: grid;
@@ -305,26 +342,6 @@ footer p{
     grid-template-rows: 10vh 20vh 20vh 20vh 10vh;
     text-align: center;
     background-color: #cfca9f;
-  }
-  .me{
-    display: grid;
-    grid-template-columns: 5vw 20vw 70vw 5vw;
-    grid-template-rows: 40vh;
-    padding: 0 0 100px 0;
-  }
-  .me img{
-    grid-column: 2 / span 1;
-    grid-row: 1 /-1;
-    object-fit: cover;
-    width:100%;
-    height:150%;
-    background-color:#d4dbe6;
-  }
-  .me p{
-    grid-row: 1 /-1;
-    grid-column: 3 / span 1;
-    background-color:#d4dbe6;
-    text-align: left;
   }
   .vheader{
     background-color: #cfca9f;

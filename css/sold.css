@@ -29,11 +29,13 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  box-shadow: -1px 0px 5px grey, 0 1px 5px grey, 1px 0 5px grey, 0 -1px 5px grey;
 }
 .flip-card-front {
   background-color: #d4dbe6;
   color: black;
 }
+
 .flip-card-back {
   background-color: #cfca9f;
   color: black;

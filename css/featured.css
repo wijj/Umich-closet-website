@@ -10,7 +10,9 @@
 .hcontainer h1{
   flex:1;
   }
-
+.text-block{
+  padding: 5px 30px 30px 30px;
+}
 .hcontainer h3{
   flex:1;
   text-align: center;
@@ -23,28 +25,11 @@ footer p{
   padding: 0px 0px;
 }
 .container{
-  display: grid;
-  grid-template-columns: 5vw 90vw 5vw;
-  grid-template-rows: repeat(6, auto);
-  grid-row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5vw;
   }
-.shirt1-image{
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
 
-}
-.shirt1{
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-}
-.shirt2-image{
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-}
-.shirt2{
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
-}
 img{
   width:100%;
   height:100%;
@@ -200,31 +185,42 @@ img{
   }
 }
 @media all and (min-width: 800px){
-
   img{
     object-fit:contain;
     align-self:center;
-    }
-  .container{
-      display:grid;
-      grid-template-columns: 1vw 20vw  1vw 56vw 1vw 20vw 1vw;
-      grid-template-rows: repeat(2,auto 40vh auto);
-    }
-  .shirt1{
-      grid-column: 4/ span 3;
-      grid-row: 2/ span 1;
-    }
+  }
+  .container img{
+    object-fit: cover;
+  }
+  .shirt3-image{
+    width: 25vw;
+    height: 25vw;
+    margin:auto;
+  }
+  .shirt2-image{
+    width: 25vw;
+    height: 25vw;
+   }
   .shirt1-image{
-      grid-column: 2 /span 1;
-      grid-row: 2/ span 1;
-    }
-   .shirt2{
-    grid-column: 2 /span 3;
-    grid-row: 5/ span 1;
-    }
-   .shirt2-image{
-    grid-column: 6 /span 1;
-    grid-row: 5/ span 1;
+    width: 25vw;
+    height: 25vw;
+  }
+  .shirt1c{
+    width: 25vw;
+    height: 100%;
+  }
+  .shirt2c{
+    width: 25vw;
+    height: 100%;
+  }
+  .shirt3c{
+    width: 25vw;
+    height: 100%;
+  }
+  .container{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   .f1{
     top:235px;
