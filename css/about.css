@@ -377,7 +377,50 @@ footer p{
   83%{color:#4d467a;}
   90%{color:black;}
 }
-@media all and (min-width:600px){}
+@media all and (min-width:600px){
+  .pcontainer{
+    grid-template-columns: 5vw 40vw auto 5vw;
+    grid-template-rows: auto auto 40vw auto 40vw;
+  }
+  .pcontainer p{
+    margin:auto auto auto 0;
+  }
+  .first{
+    grid-row: 1/ span 1;
+    grid-column: 2 / span 2;
+  }
+  .pcontainer p:nth-child(4){
+    grid-row: 3/ span 1;
+    grid-column: 3 / span 1;
+    text-align: left;
+  } 
+  .pcontainer img:nth-child(3){
+    grid-row: 3/ span 1;
+    grid-column: 2 / span 1;
+  }
+  .pcontainer h3:nth-child(2){
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 2;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .pcontainer img:nth-child(6){
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+  }
+  .pcontainer p:nth-child(7){
+    grid-row: 5 / span 1;
+    grid-column: 3 / span 1;
+    text-align: left;
+  }
+  .pcontainer h3:nth-child(5){
+    grid-row: 4 / span 1;
+    grid-column:  2 / span 2;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+}
 @media all and (min-width: 800px){
   .hhide{
     visibility:hidden;

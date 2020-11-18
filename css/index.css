@@ -8,9 +8,10 @@ header h1{
   padding: 30px 0 0 0;
 }
 header p{
-  padding: 5px 25px 0px 25px;
+  padding: 10px 25px 5px 25px;
   font-size: 24px;
   text-align: center;
+
 }
 header h2{
   padding: 0 13px 0 13px;
@@ -105,11 +106,12 @@ img{
   .container{
     display:grid;
     grid-template-columns: 1vw 25vw  auto 1vw;
-    grid-template-rows: auto 400px 400px 400px 400px 400px 400px auto;
+    grid-template-rows: repeat(8,auto);
   }
   .container img{
     height: 25vw;
-    margin:auto;
+    align-self: center;
+    justify-self: center;
   }
   .shirt1, .shirt3, .shirt5, .shirt2, .shirt4,.shirt6{
     grid-column: 3/ span 1;
@@ -135,6 +137,7 @@ img{
   }
   .shirt1-image,  .shirt3-image,.shirt5-image, .shirt2-image,.shirt4-image,.shirt6-image{
     grid-column: 2 /span 1;
+    margin:auto;
 }
 @media all and (min-width: 800px){
   img{
