@@ -47,12 +47,42 @@ text-align: center;
 }
 .image1c{
   position:relative;
+  -webkit-animation: moveoff 4s linear infinite;
+  -moz-animation: moveoff 4s linear infinite;
+  -o-animation: moveoff 4s linear infinite;
   animation: moveoff 4s linear infinite;
 }
 .image2c{
   position:relative;
   left:100vw;
+  -webkit-animation: moveon 4s linear infinite;
+  -moz-animation: moveon 4s linear infinite;
+  -o-animation: moveon 4s linear infinite;
   animation: moveon 4s linear infinite;
+}
+@-moz-keyframes moveoff {
+  0% {
+    left:0vw;
+  }
+  100% {
+    left:-100vw;
+  }
+}
+@-ms-keyframes moveoff {
+  0% {
+    left:0vw;
+  }
+  100% {
+    left:-100vw;
+  }
+}
+@-webkit-keyframes moveoff {
+  0% {
+    left:0vw;
+  }
+  100% {
+    left:-100vw;
+  }
 }
 @keyframes moveoff {
   0% {
@@ -60,6 +90,30 @@ text-align: center;
   }
   100% {
     left:-100vw;
+  }
+}
+@-moz-keyframes moveon {
+  0% {
+    left:100vw;
+  }
+  100% {
+    left:0vw;
+  }
+}
+@-ms-keyframes moveon {
+  0% {
+    left:100vw;
+  }
+  100% {
+    left:0vw;
+  }
+}
+@-webkit-keyframes moveon {
+  0% {
+    left:100vw;
+  }
+  100% {
+    left:0vw;
   }
 }
 @keyframes moveon {
@@ -323,6 +377,7 @@ footer p{
   83%{color:#4d467a;}
   90%{color:black;}
 }
+@media all and (min-width:600px){}
 @media all and (min-width: 800px){
   .hhide{
     visibility:hidden;
@@ -445,6 +500,18 @@ footer p{
 
 
 @media screen and (prefers-reduced-motion: reduce){
+.image1c{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+.image2c{
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
 html{
     scroll-behavior: auto; 
   }

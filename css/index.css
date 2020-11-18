@@ -100,26 +100,20 @@ img{
   animation: loading 3.1s ease-out;
 
 }
-@media all and (min-width: 800px){
-  img{
-    object-fit:cover;
-    align-self:center;
-  }
-  header h2{
-    padding: 0 0 50px 0;
-  }
+
+@media all and (min-width:600px){
   .container{
     display:grid;
-    grid-template-columns: 1vw 20vw  1vw 56vw 1vw 20vw 1vw;
+    grid-template-columns: 1vw 25vw  auto 1vw;
     grid-template-rows: auto 400px 400px 400px 400px 400px 400px auto;
   }
-  .shirt1, .shirt3, .shirt5{
-    grid-column: 4/ span 3;
-    text-align: left;
+  .container img{
+    height: 25vw;
+    margin:auto;
   }
-  .shirt2, .shirt4,.shirt6{
-    grid-column: 2/ span 3;
-    text-align: right;
+  .shirt1, .shirt3, .shirt5, .shirt2, .shirt4,.shirt6{
+    grid-column: 3/ span 1;
+    text-align: left;
   }
   .shirt1-image,.shirt1{
     grid-row: 2/ span 1;
@@ -138,6 +132,29 @@ img{
   }
   .shirt6-image,.shirt6{
     grid-row: 7/ span 1;
+  }
+  .shirt1-image,  .shirt3-image,.shirt5-image, .shirt2-image,.shirt4-image,.shirt6-image{
+    grid-column: 2 /span 1;
+}
+@media all and (min-width: 800px){
+  img{
+    object-fit:cover;
+    align-self:center;
+  }
+  header h2{
+    padding: 0 0 50px 0;
+  }
+  .container{
+    display:grid;
+    grid-template-columns: 1vw 20vw  1vw 56vw 1vw 20vw 1vw;
+  }
+  .shirt1, .shirt3, .shirt5{
+    grid-column: 4/ span 3;
+    text-align: left;
+  }
+  .shirt2, .shirt4,.shirt6{
+    grid-column: 2/ span 3;
+    text-align: right;
   }
   .shirt1-image,  .shirt3-image,.shirt5-image{
     grid-column: 2 /span 1;

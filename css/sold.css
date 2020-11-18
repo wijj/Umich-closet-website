@@ -54,6 +54,8 @@ img{
   height: 100%;
   margin:auto;
 }
+
+@media all and (min-width:600px){}
 @media all and (min-width: 800px){
   .flip-card {
     width: 300px;

@@ -184,6 +184,75 @@ img{
     transform: rotate(360deg);
   }
 }
+
+@media all and (min-width:600px){
+  .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .shirt3-image{
+    width: 25vw;
+    height: 25vw;
+  }
+  .shirt2-image{
+    width: 25vw;
+    height: 25vw;
+   }
+  .shirt1-image{
+    width: 25vw;
+    height: 25vw;
+  }
+  .shirt1c{
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .shirt2c{
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .shirt3c{
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .f1{
+    top:305px;
+    left:5vw;
+  }
+  .f2{
+    top:290px;
+    left:13vw;
+  }
+  .f3{
+    top:305px;
+    left:21vw;
+  }
+  .f4{
+    top:305px;
+    right:5vw;
+  }
+  .f5{
+    top:290px;
+    right:13vw;
+  }
+  .f6{
+    top:305px;
+    right:21vw;
+  }
+}
 @media all and (min-width: 800px){
   img{
     object-fit:contain;
@@ -192,10 +261,12 @@ img{
   .container img{
     object-fit: cover;
   }
+  .container{
+    align-items: flex-start;
+  }
   .shirt3-image{
     width: 25vw;
     height: 25vw;
-    margin:auto;
   }
   .shirt2-image{
     width: 25vw;
@@ -208,14 +279,17 @@ img{
   .shirt1c{
     width: 25vw;
     height: 100%;
+    display: inline;
   }
   .shirt2c{
     width: 25vw;
     height: 100%;
+    display: inline;
   }
   .shirt3c{
     width: 25vw;
     height: 100%;
+    display: inline;
   }
   .container{
       display:flex;
