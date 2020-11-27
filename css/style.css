@@ -16,10 +16,6 @@ html{
   background-image: url("../images/header.jpg");
   height: 200px;
   width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .above1{
   -webkit-animation: loadingin 3s ease-in-out;
@@ -119,7 +115,7 @@ nav a:hover .featured, nav a:focus-within .featured{
   width:85px;
 }
 nav a:hover .sold,nav a:focus-within .sold{
-  width:50px;
+  width:80px;
 }
 nav a:hover .icon, nav a:focus .icon{
   width:25px;
@@ -131,7 +127,7 @@ nav a:hover .icon, nav a:focus .icon{
   width:85px;
 }
 .on .sold{
-  width:50px;
+  width:80px;
 }
 .on:hover .navimage, .on:focus-within .navimage{
   width:0px;
@@ -224,6 +220,7 @@ img{
   }
 
 @media all and (min-width:600px){
+
   nav ul {
     flex-flow: row wrap;
   }
@@ -251,6 +248,12 @@ img{
   nav .user:nth-child(6) {
     order: 6;
   }
+  .above2{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 }
 @media all and (min-width: 800px){
@@ -269,22 +272,22 @@ img{
     flex: 1;
     display:inline;
   }
-nav li:nth-child(1){
-  order: 1;
-}
-nav li:nth-child(2){
-  order: 2;
-}
-nav li:nth-child(3){
-  order: 3;
-}
-nav li:nth-child(4){
-  order: 4; 
-}
-nav .user:nth-child(5) {
-  order: 5;
-}
-nav .user:nth-child(6) {
-  order: 6;
-}
+  nav li:nth-child(1){
+    order: 1;
+  }
+  nav li:nth-child(2){
+    order: 2;
+  }
+  nav li:nth-child(3){
+    order: 3;
+  }
+  nav li:nth-child(4){
+    order: 4; 
+  }
+  nav .user:nth-child(5) {
+    order: 5;
+  }
+  nav .user:nth-child(6) {
+    order: 6;
+  }
 }
