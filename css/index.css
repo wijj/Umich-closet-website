@@ -139,6 +139,7 @@ img{
     grid-column: 2 /span 1;
     margin:auto;
 }
+}
 @media all and (min-width: 800px){
   img{
     object-fit:cover;
@@ -166,8 +167,6 @@ img{
     grid-column:  6/span 1;
   }
 }
-
-
 @media screen and (prefers-reduced-motion: reduce){
 html{
     scroll-behavior: auto; 
