@@ -159,7 +159,7 @@ margin:0;
   text-align: center;
   padding: 0 20px;
 }
-.vcontainer h3:hover, .vcontainer:focus h3{
+.vcontainer h3:hover{
   -webkit-animation: gradient 4s infinite ease-in-out;
   -moz-animation: gradient 4s infinite ease-in-out;
   -o-animation: gradient 4s infinite ease-in-out;
