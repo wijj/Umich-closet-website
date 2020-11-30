@@ -3,7 +3,7 @@ html{
 }
 .headers{
   display:grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: 100%;
   grid-template-rows: 200px;
 }
 .above2{
@@ -14,7 +14,7 @@ html{
   background-image: url("../images/header.jpg");
   background-size: cover;
   height: 200px;
-  width: 100vw;
+  width: 100%;
 }
 .above1{
   -webkit-animation: loadingin 3s ease-in-out;
