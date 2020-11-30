@@ -1,24 +1,27 @@
-main{
-  margin: 0 5vw;
-}
+
 .hcontainer{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 5vw;
+  width:100vw;
   }
 
 .hcontainer h1{
+  margin: 0 5vw;
   flex:1;
   }
 .text-block{
   padding: 5px 30px 30px 30px;
 }
-.hcontainer h3{
+.hcontainer h2{
+  margin: 0 5vw;
   flex:1;
   text-align: center;
   }
+.hcontainer p{
+  margin:0 5vw;
+}
 p{
   padding: 2vh 1vw;
   text-align:center;
@@ -27,6 +30,7 @@ footer p{
   padding: 0px 0px;
 }
 .container{
+  margin: 0 5vw;
   display: flex;
   flex-direction: column;
   }
