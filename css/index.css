@@ -150,7 +150,7 @@ img{
   }
   .container{
     display:grid;
-    grid-template-columns: 1vw 20vw  1vw 56vw 1vw 20vw 1vw;
+    grid-template-columns: 1% 20%  1% 56% 1% 20% 1%;
   }
   .shirt1, .shirt3, .shirt5{
     grid-column: 4/ span 3;
