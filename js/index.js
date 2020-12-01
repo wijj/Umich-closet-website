@@ -8,16 +8,17 @@
       //}, 500);
 //};
 function update(){
-    if (window.matchMedia("(min-width: 800px)").matches) {
+    if (window.matchMedia("(min-width: 800px)").matches & window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
         console.log('changed');
         document.getElementById('toadd').innerHTML+=' (Hover!!!)'
         // credit to https://stackoverflow.com/questions/55121685/how-to-disable-javascript-code-in-mobile-version for if statement
+        //also to https://www.joshwcomeau.com/react/prefers-reduced-motion/
     }
     else{
         console.log('nochange');
     };
 };
-if(window.matchMedia("(min-width: 800px)").matches){
+if(window.matchMedia("(min-width: 800px)").matches & window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
     console.log('bigscreen');
     $(document).ready(function(){
         $(".shirt1i").hover(function(){

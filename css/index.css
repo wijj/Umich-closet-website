@@ -272,6 +272,59 @@ html{
   -o-animation: none;
   animation: none;
 }
+@media all and (min-width: 800px){
+  img{
+    object-fit:cover;
+    align-self:center;
+  }
+  header h2{
+    padding: 0 0 50px 0;
+  }
+  .container{
+    display:grid;
+    grid-template-columns: 1% 20%  1% 56% 1% 20% 1%;
+    grid-template-rows: repeat(8,auto);
+  }
+  .shirt1, .shirt3, .shirt5{
+    grid-column: 4/ span 3;
+    text-align: left;
+    visibility: visible;
+    opacity: 100;
+    margin: auto;
+
+  }
+  .shirt2, .shirt4,.shirt6{
+    grid-column: 2/ span 3;
+    text-align: right;
+    visibility: visible;
+    opacity: 100;
+    margin: auto;
+  }
+  .shirt1i,  .shirt3i,.shirt5i{
+    grid-column: 2 /span 1;
+  }
+  .shirt2i,.shirt4i,.shirt6i{
+    grid-column:  6/span 1;
+  }
+  .shirt1i,.shirt1{
+    grid-row: 2/ span 1;
+  }
+  .shirt2i,.shirt2{
+    grid-row: 3/ span 1;
+  }
+  .shirt3i,.shirt3{
+    grid-row: 4/ span 1;
+  }
+  .shirt4i,.shirt4{
+    grid-row: 5/ span 1;
+  }
+  .shirt5i,.shirt5{
+    grid-row: 6/ span 1;
+  }
+  .shirt6i,.shirt6{
+    grid-row: 7/ span 1;
+  }
+}
 }
 @keyframes loading {
   0%{visibility:visible;}
