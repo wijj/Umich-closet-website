@@ -353,6 +353,7 @@ input[type=checkbox]{
 input[type=submit] {
   background-color: #cfca9f;
   color: black;
+  transition: color .5s linear, background-color .5s linear;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;

@@ -1,26 +1,12 @@
 
-.hcontainer{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width:100vw;
-  }
-
-.hcontainer h1{
+header p{
   margin: 0 5vw;
-  flex:1;
-  }
+}
+header h2{
+  margin: 0 5vw;
+}
 .text-block{
   padding: 5px 30px 30px 30px;
-}
-.hcontainer h2{
-  margin: 0 5vw;
-  flex:1;
-  text-align: center;
-  }
-.hcontainer p{
-  margin:0 5vw;
 }
 p{
   padding: 2vh 1vw;
