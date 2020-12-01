@@ -23,7 +23,7 @@ html{
   animation: loadingin 3s ease-in-out;
   grid-column:1/-1;
   grid-row: 1/ span 1;
-  z-index: 1;
+  z-index: 3;
 }
 .above1 img{
   max-height: 150px;
@@ -105,7 +105,7 @@ nav .navimage{
   right: 0;
   width:0vw;
   margin:auto;
-  transition: width 2s;
+  transition: width 1.5s;
 }
 nav a:hover .home,nav a:hover .about, nav a:focus-within .home, nav a:focus-within .about{
   width:60px;
