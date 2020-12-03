@@ -148,7 +148,7 @@ footer a img{
   padding:3px;
 }
 .skip a{
-background: white;
+background: #cfca9f;
 left: 0;
 padding: 6px;
 -webkit-transition: top 1s ease-out;
@@ -161,6 +161,7 @@ top:-40px;
 .skip a:focus{
 position: absolute;
 top:0px; 
+color:black;
 }
 *:focus{
 text-decoration:underline;

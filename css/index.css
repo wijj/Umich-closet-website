@@ -171,6 +171,10 @@ img{
     overflow: hidden;
     justify-content: flex-start;
     align-items: flex-start;
+    
+  }
+  .simage:focus{
+    border:5px solid black;
   }
   .simage .overlay{
     visibility: hidden;
