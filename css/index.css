@@ -350,27 +350,3 @@ html{
   99% {opacity:0;}
   100% {opacity:0;}
 }
-@keyframes loadingin{
-  0%   {opacity:0;}
-  10% {opacity: 0;}
-  80% {opacity: 1;}
-  100% {opacity: 1;}
-}
-@-moz-keyframes loadingin{
-  0%   {opacity:0;}
-  10% {opacity: 0;}
-  80% {opacity: 1;}
-  100% {opacity: 1;}
-}
-@-webkit-keyframes loadingin{
-  0%   {opacity:0;}
-  10% {opacity: 0;}
-  80% {opacity: 1;}
-  100% {opacity: 1;}
-}
-@-ms-keyframes loadingin{
-  0%   {opacity:0;}
-  10% {opacity: 0;}
-  60% {opacity: 1;}
-  100% {opacity: 1;}
-}
