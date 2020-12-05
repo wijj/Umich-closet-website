@@ -261,14 +261,6 @@ text-align: center;
   text-align: center;
   }
 
-.fleximage{
-display: flex;
-align-items: center;
-justify-content: center;
-max-width: 40vw;
-margin:auto;
-padding: 5px 0 30px;
-}
 .ccontainer{
 text-align: center;
 display:grid;
