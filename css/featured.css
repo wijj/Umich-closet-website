@@ -81,7 +81,9 @@ img{
   -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
 }
-
+.shirt1-image img,.shirt2-image img,.shirt3-image img{
+  border:2px solid rgba(0,0,0,.6);
+}
 @keyframes lspin {
   0% {
     -webkit-transform: rotate(0deg);
