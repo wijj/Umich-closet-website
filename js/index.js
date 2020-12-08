@@ -354,7 +354,7 @@ else{
 $(window).resize(function() {
     if(window.matchMedia("(min-width: 800px)").matches & window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
         console.log('changed bigscreen');
-        document.getElementById('toadd').innerHTML='Featured Bestsellers (Hover!!!)'
+        document.getElementById('toadd').innerHTML='Featured Bestsellers (Hover!!!)';
         $('.shirt1').css("visibility", "hidden");
         $('.shirt1').css("opacity", "0");
         $('.shirt1').css('margin', '-70px 0 0 0');
@@ -379,176 +379,333 @@ $(window).resize(function() {
         $('.shirt4i img').css('margin', '0 0 0 0');
         $('.shirt5i img').css('margin', '0 0 0 0');
         $('.shirt6i img').css('margin', '0 0 0 0');
-
         $(document).ready(function(){
-            $(".shirt1i").hover(function(){
-              $('.shirt1').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h1').css("visibility", "visible");
-              $('.o1').css("visibility", "visible");
-              $('#h1').css("opacity", "1");
-              $('.o1').css("opacity", "1");
-              $('.shirt1').css("visibility", "visible");
-              $('.shirt1').css("opacity", "1");
-              $('.shirt1i img').css('margin', '50px 0 0 0');
-              $('.shirt1i h3').css('margin', '10vw 0 0 0');
-              $('.shirt1i div').css('margin', '50px 0 0 0');
-              $('.shirt1').css('margin', '0 auto 0 0');
-              }, function(){
-              $('#h1').css("visibility", "hidden");
-              $('.o1').css("visibility", "hidden");
-              $('.shirt1').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h1').css("opacity", "0");
-              $('.o1').css("opacity", "0");
-              $('.shirt1').css("visibility", "hidden");
-              $('.shirt1').css("opacity", "0");
-              $('.shirt1i img').css('margin', '0 0 0 0');
-              $('.shirt1i h3').css('margin', '4vw 0 0 0');
-              $('.shirt1i div').css('margin', '-200px 0 0 0');
-              $('.shirt1').css('margin', ' -70px 0 0 0');
-            });
+          $( ".shirt1i" ).focusin(function(){
+            $('.shirt1').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h1').css("visibility", "visible");
+            $('.o1').css("visibility", "visible");
+            $('#h1').css("opacity", "1");
+            $('.o1').css("opacity", "1");
+            $('.shirt1').css("visibility", "visible");
+            $('.shirt1').css("opacity", "1");
+            $('.shirt1i img').css('margin', '50px 0 0 0');
+            $('.shirt1i h3').css('margin', '10vw 0 0 0');
+            $('.shirt1i div').css('margin', '50px 0 0 0');
+            $('.shirt1').css('margin', '0 auto 0 0');
           });
-          $(document).ready(function(){
-            $(".shirt2i").hover(function(){
-              $('.shirt2').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h2').css("visibility", "visible");
-              $('.o2').css("visibility", "visible");
-              $('#h2').css("opacity", "1");
-              $('.o2').css("opacity", "1");
-              $('.shirt2').css("visibility", "visible");
-              $('.shirt2').css("opacity", "1");
-              $('.shirt2i img').css('margin', '50px 0 0 0');
-              $('.shirt2i h3').css('margin', '10vw 0 0 0');
-              $('.shirt2i div').css('margin', '50px 0 0 0');
-              $('.shirt2').css('margin', '0 auto 0 0');
-              }, function(){
-              $('#h2').css("visibility", "hidden");
-              $('.o2').css("visibility", "hidden");
-              $('.shirt2').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h2').css("opacity", "0");
-              $('.o2').css("opacity", "0");
-              $('.shirt2').css("visibility", "hidden");
-              $('.shirt2').css("opacity", "0");      
-              $('.shirt2i img').css('margin', '0 0 0 0');
-              $('.shirt2i h3').css('margin', '4vw 0 0 0');
-              $('.shirt2i div').css('margin', '-200px 0 0 0');
-              $('.shirt2').css('margin', '-70px 0 0 0');
-        
-            });
+  
+          $(".shirt1i").focusout(function(){
+            $('#h1').css("visibility", "hidden");
+            $('.o1').css("visibility", "hidden");
+            $('.shirt1').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h1').css("opacity", "0");
+            $('.o1').css("opacity", "0");
+            $('.shirt1').css("visibility", "hidden");
+            $('.shirt1').css("opacity", "0");
+            $('.shirt1i img').css('margin', '0 0 0 0');
+            $('.shirt1i h3').css('margin', '4vw 0 0 0');
+            $('.shirt1i div').css('margin', '-200px 0 0 0');
+            $('.shirt1').css('margin', ' -70px 0 0 0');
           });
-          $(document).ready(function(){
-            $(".shirt3i").hover(function(){
-              $('#h3').css("visibility", "visible");
-              $('.shirt3').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('.o3').css("visibility", "visible");
-              $('#h3').css("opacity", "1");
-              $('.o3').css("opacity", "1");
-              $('.shirt3').css("visibility", "visible");
-              $('.shirt3').css("opacity", "1");
-              $('.shirt3i img').css('margin', '50px 0 0 0');
-              $('.shirt3i h3').css('margin', '10vw 0 0 0');
-              $('.shirt3i div').css('margin', '50px 0 0 0');
-              $('.shirt3').css('margin', '0 auto 0 0');
-        
-              }, function(){
-              $('#h3').css("visibility", "hidden");
-              $('.o3').css("visibility", "hidden");
-              $('.shirt3').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h3').css("opacity", "0");
-              $('.o3').css("opacity", "0");
-              $('.shirt3').css("visibility", "hidden");
-              $('.shirt3').css("opacity", "0");
-              $('.shirt3i img').css('margin', '0 0 0 0');
-              $('.shirt3i h3').css('margin', '4vw 0 0 0');
-              $('.shirt3i div').css('margin', '-200px 0 0 0');
-              $('.shirt3').css('margin', '-70px 0 0 0');
-        
-            });
+  
+          $(".shirt1i").hover(function(){
+            $('.shirt1').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h1').css("visibility", "visible");
+            $('.o1').css("visibility", "visible");
+            $('#h1').css("opacity", "1");
+            $('.o1').css("opacity", "1");
+            $('.shirt1').css("visibility", "visible");
+            $('.shirt1').css("opacity", "1");
+            $('.shirt1i img').css('margin', '50px 0 0 0');
+            $('.shirt1i h3').css('margin', '10vw 0 0 0');
+            $('.shirt1i div').css('margin', '50px 0 0 0');
+            $('.shirt1').css('margin', '0 auto 0 0');
+            }, function(){
+            $('#h1').css("visibility", "hidden");
+            $('.o1').css("visibility", "hidden");
+            $('.shirt1').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h1').css("opacity", "0");
+            $('.o1').css("opacity", "0");
+            $('.shirt1').css("visibility", "hidden");
+            $('.shirt1').css("opacity", "0");
+            $('.shirt1i img').css('margin', '0 0 0 0');
+            $('.shirt1i h3').css('margin', '4vw 0 0 0');
+            $('.shirt1i div').css('margin', '-200px 0 0 0');
+            $('.shirt1').css('margin', ' -70px 0 0 0');
           });
-          $(document).ready(function(){
-            $(".shirt4i").hover(function(){
-              $('.shirt4').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h4').css("visibility", "visible");
-              $('.o4').css("visibility", "visible");
-              $('#h4').css("opacity", "1");
-              $('.o4').css("opacity", "1");
-              $('.shirt4').css("visibility", "visible");
-              $('.shirt4').css("opacity", "1");
-              $('.shirt4i img').css('margin', '50px 0 0 0');
-              $('.shirt4i h3').css('margin', '10vw 0 0 0');
-              $('.shirt4i div').css('margin', '50px 0 0 0');
-              $('.shirt4').css('margin', '0 auto 0 0');
-        
-              }, function(){
-              $('#h4').css("visibility", "hidden");
-              $('.o4').css("visibility", "hidden");
-              $('.shirt4').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h4').css("opacity", "0");
-              $('.o4').css("opacity", "0");
-              $('.shirt4').css("visibility", "hidden");
-              $('.shirt4').css("opacity", "0");
-              $('.shirt4i img').css('margin', '0 0 0 0');
-              $('.shirt4i h3').css('margin', '4vw 0 0 0');
-              $('.shirt4i div').css('margin', '-200px 0 0 0');
-              $('.shirt4').css('margin', '-70px 0 0 0');
-            });
+  
+          $( ".shirt2i" ).focusin(function(){
+            $('.shirt2').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h2').css("visibility", "visible");
+            $('.o2').css("visibility", "visible");
+            $('#h2').css("opacity", "1");
+            $('.o2').css("opacity", "1");
+            $('.shirt2').css("visibility", "visible");
+            $('.shirt2').css("opacity", "1");
+            $('.shirt2i img').css('margin', '50px 0 0 0');
+            $('.shirt2i h3').css('margin', '10vw 0 0 0');
+            $('.shirt2i div').css('margin', '50px 0 0 0');
+            $('.shirt2').css('margin', '0 auto 0 0');
           });
-          $(document).ready(function(){
-            $(".shirt5i").hover(function(){
-              $('.shirt5').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h5').css("visibility", "visible");
-              $('.o5').css("visibility", "visible");
-              $('#h5').css("opacity", "1");
-              $('.o5').css("opacity", "1");
-              $('.shirt5').css("visibility", "visible");
-              $('.shirt5').css("opacity", "1");
-              $('.shirt5i img').css('margin', '50px 0 0 0');
-              $('.shirt5i h3').css('margin', '10vw 0 0 0');
-              $('.shirt5i div').css('margin', '50px 0 0 0');
-              $('.shirt5').css('margin', '0 auto 0 0');
-        
-              }, function(){
-              $('#h5').css("visibility", "hidden");
-              $('.o5').css("visibility", "hidden");
-              $('.shirt5').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h5').css("opacity", "0");
-              $('.o5').css("opacity", "0");
-              $('.shirt5').css("visibility", "hidden");
-              $('.shirt5').css("opacity", "0");
-              $('.shirt5i img').css('margin', '0 0 0 0');
-              $('.shirt5i h3').css('margin', '4vw 0 0 0');
-              $('.shirt5i div').css('margin', '-200px 0 0 0');
-              $('.shirt5').css('margin', '-70px 0 0 0');
-        
-            });
+  
+          $( ".shirt2i" ).focusout(function(){
+            $('#h2').css("visibility", "hidden");
+            $('.o2').css("visibility", "hidden");
+            $('.shirt2').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h2').css("opacity", "0");
+            $('.o2').css("opacity", "0");
+            $('.shirt2').css("visibility", "hidden");
+            $('.shirt2').css("opacity", "0");      
+            $('.shirt2i img').css('margin', '0 0 0 0');
+            $('.shirt2i h3').css('margin', '4vw 0 0 0');
+            $('.shirt2i div').css('margin', '-200px 0 0 0');
+            $('.shirt2').css('margin', '-70px 0 0 0');
           });
-          $(document).ready(function(){
-            $(".shirt6i").hover(function(){
-              $('.shirt6').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h6').css("visibility", "visible");
-              $('.o6').css("visibility", "visible");
-              $('#h6').css("opacity", "1");
-              $('.o6').css("opacity", "1");
-              $('.shirt6').css("visibility", "visible");
-              $('.shirt6').css("opacity", "1");
-              $('.shirt6i img').css('margin', '50px 0 0 0');
-              $('.shirt6i h3').css('margin', '10vw 0 0 0');
-              $('.shirt6i div').css('margin', '50px 0 0 0');
-              $('.shirt6').css('margin', '0 auto 0 0');
-        
-              }, function(){
-              $('.shirt6').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
-              $('#h6').css("visibility", "hidden");
-              $('.o6').css("visibility", "hidden");
-              $('#h6').css("opacity", "0");
-              $('.o6').css("opacity", "0");
-              $('.shirt6').css("visibility", "hidden");
-              $('.shirt6').css("opacity", "0");
-              $('.shirt6i img').css('margin', '0 0 0 0');
-              $('.shirt6i h3').css('margin', '4vw 0 0 0');
-              $('.shirt6i div').css('margin', '-200px 0 0 0');
-              $('.shirt6').css('margin', '-70px 0 0 0');
-            });
+  
+          $(".shirt2i").hover(function(){
+            $('.shirt2').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h2').css("visibility", "visible");
+            $('.o2').css("visibility", "visible");
+            $('#h2').css("opacity", "1");
+            $('.o2').css("opacity", "1");
+            $('.shirt2').css("visibility", "visible");
+            $('.shirt2').css("opacity", "1");
+            $('.shirt2i img').css('margin', '50px 0 0 0');
+            $('.shirt2i h3').css('margin', '10vw 0 0 0');
+            $('.shirt2i div').css('margin', '50px 0 0 0');
+            $('.shirt2').css('margin', '0 auto 0 0');
+            }, function(){
+            $('#h2').css("visibility", "hidden");
+            $('.o2').css("visibility", "hidden");
+            $('.shirt2').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h2').css("opacity", "0");
+            $('.o2').css("opacity", "0");
+            $('.shirt2').css("visibility", "hidden");
+            $('.shirt2').css("opacity", "0");      
+            $('.shirt2i img').css('margin', '0 0 0 0');
+            $('.shirt2i h3').css('margin', '4vw 0 0 0');
+            $('.shirt2i div').css('margin', '-200px 0 0 0');
+            $('.shirt2').css('margin', '-70px 0 0 0');
           });
+  
+          $( ".shirt3i" ).focusin(function(){
+            $('#h3').css("visibility", "visible");
+            $('.shirt3').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('.o3').css("visibility", "visible");
+            $('#h3').css("opacity", "1");
+            $('.o3').css("opacity", "1");
+            $('.shirt3').css("visibility", "visible");
+            $('.shirt3').css("opacity", "1");
+            $('.shirt3i img').css('margin', '50px 0 0 0');
+            $('.shirt3i h3').css('margin', '10vw 0 0 0');
+            $('.shirt3i div').css('margin', '50px 0 0 0');
+            $('.shirt3').css('margin', '0 auto 0 0');
+      
+          });
+  
+          $( ".shirt3i" ).focusout(function(){
+            $('#h3').css("visibility", "hidden");
+            $('.o3').css("visibility", "hidden");
+            $('.shirt3').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h3').css("opacity", "0");
+            $('.o3').css("opacity", "0");
+            $('.shirt3').css("visibility", "hidden");
+            $('.shirt3').css("opacity", "0");
+            $('.shirt3i img').css('margin', '0 0 0 0');
+            $('.shirt3i h3').css('margin', '4vw 0 0 0');
+            $('.shirt3i div').css('margin', '-200px 0 0 0');
+            $('.shirt3').css('margin', '-70px 0 0 0');
+          });
+  
+          $(".shirt3i").hover(function(){
+            $('#h3').css("visibility", "visible");
+            $('.shirt3').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('.o3').css("visibility", "visible");
+            $('#h3').css("opacity", "1");
+            $('.o3').css("opacity", "1");
+            $('.shirt3').css("visibility", "visible");
+            $('.shirt3').css("opacity", "1");
+            $('.shirt3i img').css('margin', '50px 0 0 0');
+            $('.shirt3i h3').css('margin', '10vw 0 0 0');
+            $('.shirt3i div').css('margin', '50px 0 0 0');
+            $('.shirt3').css('margin', '0 auto 0 0');
+            }, function(){
+            $('#h3').css("visibility", "hidden");
+            $('.o3').css("visibility", "hidden");
+            $('.shirt3').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h3').css("opacity", "0");
+            $('.o3').css("opacity", "0");
+            $('.shirt3').css("visibility", "hidden");
+            $('.shirt3').css("opacity", "0");
+            $('.shirt3i img').css('margin', '0 0 0 0');
+            $('.shirt3i h3').css('margin', '4vw 0 0 0');
+            $('.shirt3i div').css('margin', '-200px 0 0 0');
+            $('.shirt3').css('margin', '-70px 0 0 0');
+          });
+  
+          $( ".shirt4i" ).focusin(function(){
+            $('.shirt4').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h4').css("visibility", "visible");
+            $('.o4').css("visibility", "visible");
+            $('#h4').css("opacity", "1");
+            $('.o4').css("opacity", "1");
+            $('.shirt4').css("visibility", "visible");
+            $('.shirt4').css("opacity", "1");
+            $('.shirt4i img').css('margin', '50px 0 0 0');
+            $('.shirt4i h3').css('margin', '10vw 0 0 0');
+            $('.shirt4i div').css('margin', '50px 0 0 0');
+            $('.shirt4').css('margin', '0 auto 0 0');
+          });
+  
+          $( ".shirt4i" ).focusout(function(){
+            $('#h4').css("visibility", "hidden");
+            $('.o4').css("visibility", "hidden");
+            $('.shirt4').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h4').css("opacity", "0");
+            $('.o4').css("opacity", "0");
+            $('.shirt4').css("visibility", "hidden");
+            $('.shirt4').css("opacity", "0");
+            $('.shirt4i img').css('margin', '0 0 0 0');
+            $('.shirt4i h3').css('margin', '4vw 0 0 0');
+            $('.shirt4i div').css('margin', '-200px 0 0 0');
+            $('.shirt4').css('margin', '-70px 0 0 0');
+          });
+  
+          $(".shirt4i").hover(function(){
+            $('.shirt4').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h4').css("visibility", "visible");
+            $('.o4').css("visibility", "visible");
+            $('#h4').css("opacity", "1");
+            $('.o4').css("opacity", "1");
+            $('.shirt4').css("visibility", "visible");
+            $('.shirt4').css("opacity", "1");
+            $('.shirt4i img').css('margin', '50px 0 0 0');
+            $('.shirt4i h3').css('margin', '10vw 0 0 0');
+            $('.shirt4i div').css('margin', '50px 0 0 0');
+            $('.shirt4').css('margin', '0 auto 0 0');
+            }, function(){
+            $('#h4').css("visibility", "hidden");
+            $('.o4').css("visibility", "hidden");
+            $('.shirt4').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h4').css("opacity", "0");
+            $('.o4').css("opacity", "0");
+            $('.shirt4').css("visibility", "hidden");
+            $('.shirt4').css("opacity", "0");
+            $('.shirt4i img').css('margin', '0 0 0 0');
+            $('.shirt4i h3').css('margin', '4vw 0 0 0');
+            $('.shirt4i div').css('margin', '-200px 0 0 0');
+            $('.shirt4').css('margin', '-70px 0 0 0');
+          });
+  
+          $( ".shirt5i" ).focusin(function(){
+            $('.shirt5').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h5').css("visibility", "visible");
+            $('.o5').css("visibility", "visible");
+            $('#h5').css("opacity", "1");
+            $('.o5').css("opacity", "1");
+            $('.shirt5').css("visibility", "visible");
+            $('.shirt5').css("opacity", "1");
+            $('.shirt5i img').css('margin', '50px 0 0 0');
+            $('.shirt5i h3').css('margin', '10vw 0 0 0');
+            $('.shirt5i div').css('margin', '50px 0 0 0');
+            $('.shirt5').css('margin', '0 auto 0 0');
+          });
+  
+          $( ".shirt5i" ).focusout(function(){
+            $('#h5').css("visibility", "hidden");
+            $('.o5').css("visibility", "hidden");
+            $('.shirt5').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h5').css("opacity", "0");
+            $('.o5').css("opacity", "0");
+            $('.shirt5').css("visibility", "hidden");
+            $('.shirt5').css("opacity", "0");
+            $('.shirt5i img').css('margin', '0 0 0 0');
+            $('.shirt5i h3').css('margin', '4vw 0 0 0');
+            $('.shirt5i div').css('margin', '-200px 0 0 0');
+            $('.shirt5').css('margin', '-70px 0 0 0');
+          });
+  
+          $(".shirt5i").hover(function(){
+            $('.shirt5').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h5').css("visibility", "visible");
+            $('.o5').css("visibility", "visible");
+            $('#h5').css("opacity", "1");
+            $('.o5').css("opacity", "1");
+            $('.shirt5').css("visibility", "visible");
+            $('.shirt5').css("opacity", "1");
+            $('.shirt5i img').css('margin', '50px 0 0 0');
+            $('.shirt5i h3').css('margin', '10vw 0 0 0');
+            $('.shirt5i div').css('margin', '50px 0 0 0');
+            $('.shirt5').css('margin', '0 auto 0 0');
+      
+            }, function(){
+            $('#h5').css("visibility", "hidden");
+            $('.o5').css("visibility", "hidden");
+            $('.shirt5').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h5').css("opacity", "0");
+            $('.o5').css("opacity", "0");
+            $('.shirt5').css("visibility", "hidden");
+            $('.shirt5').css("opacity", "0");
+            $('.shirt5i img').css('margin', '0 0 0 0');
+            $('.shirt5i h3').css('margin', '4vw 0 0 0');
+            $('.shirt5i div').css('margin', '-200px 0 0 0');
+            $('.shirt5').css('margin', '-70px 0 0 0');
+      
+          });
+          $( ".shirt6i" ).focusin(function(){
+            $('.shirt6').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h6').css("visibility", "visible");
+            $('.o6').css("visibility", "visible");
+            $('#h6').css("opacity", "1");
+            $('.o6').css("opacity", "1");
+            $('.shirt6').css("visibility", "visible");
+            $('.shirt6').css("opacity", "1");
+            $('.shirt6i img').css('margin', '50px 0 0 0');
+            $('.shirt6i h3').css('margin', '10vw 0 0 0');
+            $('.shirt6i div').css('margin', '50px 0 0 0');
+            $('.shirt6').css('margin', '0 auto 0 0');
+      
+          });
+          $( ".shirt6i" ).focusout(function(){
+            $('.shirt6').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h6').css("visibility", "hidden");
+            $('.o6').css("visibility", "hidden");
+            $('#h6').css("opacity", "0");
+            $('.o6').css("opacity", "0");
+            $('.shirt6').css("visibility", "hidden");
+            $('.shirt6').css("opacity", "0");
+            $('.shirt6i img').css('margin', '0 0 0 0');
+            $('.shirt6i h3').css('margin', '4vw 0 0 0');
+            $('.shirt6i div').css('margin', '-200px 0 0 0');
+            $('.shirt6').css('margin', '-70px 0 0 0');
+          });
+          $(".shirt6i").hover(function(){
+            $('.shirt6').css('transition', 'opacity .5s ease-in-out .5s, margin 1s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h6').css("visibility", "visible");
+            $('.o6').css("visibility", "visible");
+            $('#h6').css("opacity", "1");
+            $('.o6').css("opacity", "1");
+            $('.shirt6').css("visibility", "visible");
+            $('.shirt6').css("opacity", "1");
+            $('.shirt6i img').css('margin', '50px 0 0 0');
+            $('.shirt6i h3').css('margin', '10vw 0 0 0');
+            $('.shirt6i div').css('margin', '50px 0 0 0');
+            $('.shirt6').css('margin', '0 auto 0 0');
+      
+            }, function(){
+            $('.shirt6').css('transition', 'opacity .1s ease-in-out, margin 2s ease-in-out .1s, visibility 1s ease-in-out .5s');
+            $('#h6').css("visibility", "hidden");
+            $('.o6').css("visibility", "hidden");
+            $('#h6').css("opacity", "0");
+            $('.o6').css("opacity", "0");
+            $('.shirt6').css("visibility", "hidden");
+            $('.shirt6').css("opacity", "0");
+            $('.shirt6i img').css('margin', '0 0 0 0');
+            $('.shirt6i h3').css('margin', '4vw 0 0 0');
+            $('.shirt6i div').css('margin', '-200px 0 0 0');
+            $('.shirt6').css('margin', '-70px 0 0 0');
+          });
+        });
     }
     else{
         console.log('changed smallscreen');
@@ -586,6 +743,24 @@ $(window).resize(function() {
                 $('.shirt1').css("opacity", "100");
                 $('#h1').css("visibility", "hidden");
             });
+        $(".shirt1i").focusin(function(){
+              $('.shirt1').css('transition', 'none');
+              $('.shirt1i img').css('margin', 'auto');
+              $('.shirt1').css('margin', 'auto 10px');
+              $('.shirt1').css("visibility", "visible");
+              $('.shirt1').css("opacity", "100");
+              $('#h1').css("visibility", "hidden");
+              $('.o1').css("visibility", "hidden");
+          });
+      $(".shirt1i").focusout(function(){
+            $('.shirt1').css('transition', 'none');
+            $('.shirt1i img').css('margin', 'auto');
+            $('.shirt1').css('margin', 'auto 10px');
+            $('.shirt1').css("visibility", "visible");
+            $('.shirt1').css("opacity", "100");
+            $('#h1').css("visibility", "hidden");
+            $('.o1').css("visibility", "hidden");
+          });
         $(".shirt2i").hover(function(){
                 $('.shirt2').css('transition', 'none');
                 $('.shirt2i img').css('margin', 'auto');
@@ -600,6 +775,24 @@ $(window).resize(function() {
                 $('.shirt2').css("visibility", "visible");
                 $('.shirt2').css("opacity", "100");
                 $('#h2').css("visibility", "hidden");
+            });
+           $(".shirt2i").focusin(function(){
+              $('.shirt2').css('transition', 'none');
+              $('.shirt2i img').css('margin', 'auto');
+              $('.shirt2').css('margin', 'auto 10px');
+              $('.shirt2').css("visibility", "visible");
+              $('.shirt2').css("opacity", "100");
+              $('#h2').css("visibility", "hidden");
+              $('.o2').css("visibility", "hidden");
+            });
+          $(".shirt2i").focusout(function(){
+            $('.shirt2').css('transition', 'none');
+            $('.shirt2i img').css('margin', 'auto');
+            $('.shirt2').css('margin', 'auto 10px');
+            $('.shirt2').css("visibility", "visible");
+            $('.shirt2').css("opacity", "100");
+            $('#h2').css("visibility", "hidden");
+            $('.o2').css("visibility", "hidden");
             });
         $(".shirt3i").hover(function(){
                 $('.shirt3').css('transition', 'none');
@@ -616,6 +809,24 @@ $(window).resize(function() {
                 $('.shirt3').css("opacity", "100");
                 $('#h3').css("visibility", "hidden");
             });
+        $(".shirt3i").focusin(function(){
+              $('.shirt3').css('transition', 'none');
+              $('.shirt3i img').css('margin', 'auto');
+              $('.shirt3').css('margin', 'auto 10px');
+              $('.shirt3').css("visibility", "visible");
+              $('.shirt3').css("opacity", "100");
+              $('#h3').css("visibility", "hidden");
+              $('.o3').css("visibility", "hidden");
+            });
+        $(".shirt3i").focusout(function(){
+              $('.shirt3').css('transition', 'none');
+              $('.shirt3i img').css('margin', 'auto');
+              $('.shirt3').css('margin', 'auto 10px');
+              $('.shirt3').css("visibility", "visible");
+              $('.shirt3').css("opacity", "100");
+              $('#h3').css("visibility", "hidden");
+              $('.o3').css("visibility", "hidden");
+            });
         $(".shirt4i").hover(function(){
                 $('.shirt4').css('transition', 'none');
                 $('.shirt4i img').css('margin', 'auto');
@@ -630,6 +841,24 @@ $(window).resize(function() {
                 $('.shirt4').css("visibility", "visible");
                 $('.shirt4').css("opacity", "100");
                 $('#h4').css("visibility", "hidden");
+            });
+        $(".shirt4i").focusin(function(){
+              $('.shirt4').css('transition', 'none');
+              $('.shirt4i img').css('margin', 'auto');
+              $('.shirt4').css('margin', 'auto 10px');
+              $('.shirt4').css("visibility", "visible");
+              $('.shirt4').css("opacity", "100");
+              $('#h4').css("visibility", "hidden");
+              $('.o4').css("visibility", "hidden");
+            });
+        $(".shirt4i").focusout(function(){
+              $('.shirt4').css('transition', 'none');
+              $('.shirt4i img').css('margin', 'auto');
+              $('.shirt4').css('margin', 'auto 10px');
+              $('.shirt4').css("visibility", "visible");
+              $('.shirt4').css("opacity", "100");
+              $('#h4').css("visibility", "hidden");
+              $('.o4').css("visibility", "hidden");
             });
         $(".shirt5i").hover(function(){
                 $('.shirt5').css('transition', 'none');
@@ -646,6 +875,42 @@ $(window).resize(function() {
                 $('.shirt5').css("opacity", "100");
                 $('#h5').css("visibility", "hidden");
             });
+        $(".shirt5i").focusin(function(){
+              $('.shirt5').css('transition', 'none');
+              $('.shirt5i img').css('margin', 'auto');
+              $('.shirt5').css('margin', 'auto 10px');
+              $('.shirt5').css("visibility", "visible");
+              $('.shirt5').css("opacity", "100");
+              $('#h5').css("visibility", "hidden");
+              $('.o5').css("visibility", "hidden");
+          });
+      $(".shirt5i").focusout(function(){
+            $('.shirt5').css('transition', 'none');
+            $('.shirt5i img').css('margin', 'auto');
+            $('.shirt5').css('margin', 'auto 10px');
+            $('.shirt5').css("visibility", "visible");
+            $('.shirt5').css("opacity", "100");
+            $('#h5').css("visibility", "hidden");
+            $('.o5').css("visibility", "hidden");
+          });
+        $(".shirt6i").focusin(function(){
+            $('.shirt6').css('transition', 'none');
+            $('.shirt6i img').css('margin', 'auto');
+            $('.shirt6').css('margin', 'auto 10px');
+            $('.shirt6').css("visibility", "visible");
+            $('.shirt6').css("opacity", "100");
+            $('#h6').css("visibility", "hidden");
+            $('.o6').css("visibility", "hidden");
+          });
+        $(".shirt6i").focusout(function(){
+            $('.shirt6').css('transition', 'none');
+            $('.shirt6i img').css('margin', 'auto');
+            $('.shirt6').css('margin', 'auto 10px');
+            $('.shirt6').css("visibility", "visible");
+            $('.shirt6').css("opacity", "100");
+            $('#h6').css("visibility", "hidden");
+            $('.o6').css("visibility", "hidden");
+          });
         $(".shirt6i").hover(function(){
                 $('.shirt6').css('transition', 'none');
                 $('.shirt6i img').css('margin', 'auto');
@@ -660,8 +925,8 @@ $(window).resize(function() {
                 $('.shirt6').css("visibility", "visible");
                 $('.shirt6').css("opacity", "100");
                 $('#h6').css("visibility", "hidden");
-
             });
+          
     };  
 });
 window.matchMedia('(prefers-reduced-motion: no-preference)').addEventListener( "change",function(){
