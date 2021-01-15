@@ -5,12 +5,12 @@ header p{
 header h2{
   margin: 0 5vw;
 }
-.text-block{
-  padding: 5px 30px 30px 30px;
-}
-p{
+#texts{
   padding: 2vh 1vw;
   text-align:center;
+}
+.text-block{
+  padding: 5px 30px 30px 30px;
 }
 footer p{
   padding: 0px 0px;
@@ -81,8 +81,12 @@ img{
   -webkit-animation-delay: -1.5s;
   animation-delay: -1.5s;
 }
-.shirt1-image img,.shirt2-image img,.shirt3-image img{
+.shirt1-image img,.shirt2-image img,.shirt3-image img,.shirt4-image img,.shirt5-image img{
   border:2px solid rgba(0,0,0,.6);
+}
+.text-block p{
+  text-align: center;
+
 }
 @keyframes lspin {
   0% {
@@ -197,6 +201,15 @@ img{
     width: 40vw;
     height: 40vw;
   }
+  .shirt4-image{
+    width: 40vw;
+    height: 40vw;
+   }
+  .shirt5-image{
+    width: 40vw;
+    height: 40vw;
+  }
+  
   .shirt1c{
     width: 95vw;
     height: 50vw;
@@ -214,6 +227,22 @@ img{
     justify-content: flex-start;
   }
   .shirt3c{
+    width: 95vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .shirt4c{
+    width: 95vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .shirt5c{
     width: 95vw;
     height: 50vw;
     display: flex;
@@ -258,29 +287,47 @@ img{
     align-items: flex-start;
   }
   .shirt3-image{
-    width: 25vw;
-    height: 25vw;
+    width: 16vw;
+    height: 16vw;
   }
   .shirt2-image{
-    width: 25vw;
-    height: 25vw;
+    width: 16vw;
+    height: 16vw;
    }
   .shirt1-image{
-    width: 25vw;
-    height: 25vw;
+    width: 16vw;
+    height: 16vw;
+  }
+  .shirt4-image{
+    width: 16vw;
+    height: 16vw;
+  }
+  .shirt5-image{
+    width: 16vw;
+    height: 16vw;
   }
   .shirt1c{
-    width: 25vw;
+    width: 16vw;
     height: 100%;
     display: inline;
   }
   .shirt2c{
-    width: 25vw;
+    width: 16vw;
     height: 100%;
     display: inline;
   }
   .shirt3c{
-    width: 25vw;
+    width: 16vw;
+    height: 100%;
+    display: inline;
+  }
+  .shirt4c{
+    width: 16vw;
+    height: 100%;
+    display: inline;
+  }
+  .shirt5c{
+    width: 16vw;
     height: 100%;
     display: inline;
   }
